@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <title>BookTown Cart Page</title>
+  </head>
+  <body>
+    <section class="h-100 h-custom">
+      <div class="container h-100 py-sm-5">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col border border-danger rounded px-sm-3 py-3">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col" class="h5">Shopping Bag</th>
+                    <th scope="col">Price</th>
+                  </tr>
+                </thead>
+                <tbody id="productItemsList"></tbody>
+              </table>
+            </div>
+            <div
+              class="card border-0 rounded-0 mt-3"
+            >
+              <div class="card-body pb-0">
+                <button
+                  type="button"
+                  class="btn btn-danger btn-block btn-lg w-100"
+                  data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                >
+                  Proceed to Pay
+                </button>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Are you sure about your purchase?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                      </div>
+                      <hr class="my-2">
+                      <div class="modal-body-2 px-4">                     
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                        <button onclick="window.open('https://booktown-4ix2.onrender.com/PaymentPage/index.html','_self','resizable=yes')" type="button" class="btn btn-danger">Go To Payment Page</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
