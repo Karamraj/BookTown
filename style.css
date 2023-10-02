@@ -22,7 +22,7 @@
 
 .nav-bar li {
     transition: all ease .2s;
-	margin: 1rem 2rem;
+	margin: 1rem 1.5rem;
 	
 }
 .nav-bar li:hover{
@@ -40,8 +40,8 @@
 .nav-bar a{
     border-radius: 1rem;
 	text-decoration: none;
-	font-size: 2rem;
-	padding: 1rem 1.5rem;
+	font-size: 1.3rem;
+	padding: 1rem 1.2rem;
     /* line-height: 4.7rem; */
 }
 
@@ -215,4 +215,14 @@ h2::after {
 .space{
     height: 230px;
     background-color: #cc3444;
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+	.nav-bar li a {
+		font-size: 0.9rem;
+         padding: 1rem 0.2rem;
+	}
+	.nav-bar li {
+		margin: 1rem;
+	}
 }
