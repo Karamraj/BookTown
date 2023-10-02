@@ -1,8 +1,10 @@
 @import url(../CSS/reset.css);
 @import url(../CSS/Utiles.css);
+
 body {
   overflow-x: hidden;
 }
+
 .row-2 {
   background: url(./IMG/deafults/bookcase-img.jpg.jpg) center no-repeat;
   background-size: cover;
@@ -26,9 +28,10 @@ body {
 .nav-bar li {
 
   transition: all ease .2s;
-	margin: 1rem 1.5rem;
+  margin: 1rem 1.5rem;
 
 }
+
 .nav-bar li:hover {
   transform: translateY(-2px);
   transition: transform ease 0.35s;
@@ -43,12 +46,12 @@ body {
 
 
 
-.nav-bar a{
-    border-radius: 1rem;
-	text-decoration: none;
-	font-size: 1.3rem;
-	padding: 1rem 1.2rem;
-    /* line-height: 4.7rem; */
+.nav-bar a {
+  border-radius: 1rem;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 1rem 1.2rem;
+  /* line-height: 4.7rem; */
 }
 
 .upper-main-body .carousel:hover,
@@ -66,6 +69,7 @@ h2 {
   position: relative;
   margin: 3rem 0 6rem;
 }
+
 h2::after {
   content: "";
   width: 10rem;
@@ -84,15 +88,18 @@ h2::after {
   margin: auto;
   padding: 0 4rem;
 }
+
 .carouselImage {
   width: 68vw;
 }
+
 .carousel .item {
   color: #747d89;
   min-height: 32.5rem;
   text-align: center;
   overflow: hidden;
 }
+
 .carousel .thumb-wrapper {
   padding: 2.5rem 1.5rem;
   background: #fff;
@@ -101,12 +108,14 @@ h2::after {
   position: relative;
   box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
 }
+
 .carousel .item .img-box {
   height: 12rem;
   margin-bottom: 2rem;
   width: 100%;
   position: relative;
 }
+
 .carousel .item img {
   max-width: 100%;
   max-height: 100%;
@@ -117,9 +126,11 @@ h2::after {
   left: 0;
   right: 0;
 }
+
 .carousel .item h4 {
   font-size: 1.8rem;
 }
+
 .carousel .item h4,
 .carousel .item p,
 .carousel .item ul {
@@ -132,19 +143,23 @@ h2::after {
   background: #dc3545;
   box-shadow: none;
 }
+
 .carousel .thumb-content .btn i {
   font-size: 1.4rem;
   font-weight: bold;
   margin-left: 0.5rem;
 }
+
 .carousel .item-price {
   font-size: 1.3rem;
   padding: 0.2rem 0;
 }
+
 .carousel .item-price strike {
   opacity: 0.7;
   margin-right: 0.5rem;
 }
+
 .carousel-control-prev,
 .carousel-control-next {
   height: 4.4rem;
@@ -154,11 +169,13 @@ h2::after {
   border-radius: 0.4rem;
   opacity: 0.8;
 }
+
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
   background: #dc3545;
   opacity: 1;
 }
+
 .carousel-control-prev i,
 .carousel-control-next i {
   font-size: 3.6rem;
@@ -173,15 +190,19 @@ h2::after {
   text-shadow: none;
   font-weight: bold;
 }
+
 .carousel-control-prev i {
   margin-left: -0.2rem;
 }
+
 .carousel-control-next i {
   margin-right: -0.4rem;
 }
+
 .carousel-indicators {
   bottom: -5rem;
 }
+
 .carousel-indicators li,
 .carousel-indicators li.active {
   width: 1rem;
@@ -190,19 +211,24 @@ h2::after {
   border-radius: 50%;
   border: none;
 }
+
 .carousel-indicators li {
   background: rgba(0, 0, 0, 0.2);
 }
+
 .carousel-indicators li.active {
   background: rgba(0, 0, 0, 0.6);
 }
+
 .star-rating li {
   padding: 0;
 }
+
 .star-rating i {
   font-size: 1.4rem;
   color: #ffc000;
 }
+
 main .book-name {
   min-height: 4.5rem;
 }
@@ -212,6 +238,7 @@ main .book-name {
   transition: all ease 0.5s;
   top: -40rem;
 }
+
 .my-5 .container {
   background-color: #cc3444;
   width: 100%;
@@ -222,26 +249,29 @@ main .book-name {
 }
 
 
-.container{
-    background-color: #FFF;
-    max-width: 100%;
-}
-.my-5{
-    background-color:#cc3444;
-	
-  }
-.space{
-    height: 230px;
-    background-color: #cc3444;
+.container {
+  background-color: #FFF;
+  max-width: 100%;
 }
 
-@media screen and (min-width:768px) and (max-width:1024px){
-	.nav-bar li a {
-		font-size: 0.9rem;
-         padding: 1rem 0.2rem;
-	}
-	.nav-bar li {
-		margin: 1rem;
-	}
+.my-5 {
+  background-color: #cc3444;
+
+}
+
+.space {
+  height: 230px;
+  background-color: #cc3444;
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+  .nav-bar li a {
+    font-size: 0.9rem;
+    padding: 1rem 0.2rem;
+  }
+
+  .nav-bar li {
+    margin: 1rem;
+  }
 }
 
