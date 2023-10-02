@@ -80,7 +80,8 @@ h2::after {
 }
 
 .carousel {
-  margin: 1rem 1rem 1rem 1rem;
+  width: 65%;
+  margin: auto;
   padding: 0 4rem;
 }
 .carouselImage {
