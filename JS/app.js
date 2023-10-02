@@ -7,7 +7,7 @@ if (localStorage.getItem("data") == null){
 }
 
 window.addEventListener("click", (el) => {
-  if (el.target.innerText == "Add to Cart ") {
+  if (el.target.innerText === "Add to Cart ") {
     let data = {
       cover: el.target.parentElement.parentElement.children[0].children[0].src,
       name: el.target.parentElement.parentElement.children[1].children[0]
@@ -35,7 +35,7 @@ window.addEventListener("click", (el) => {
 // added to cart , alert section
 
 window.addEventListener("click", (el) => {
-  if (el.target.innerText == "Add to Cart "){
+  if (el.target.innerText === "Add to Cart "){
     alert(`${el.target.parentElement.children[0].innerText} Added to cart!`);
 }});
 

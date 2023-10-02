@@ -2,7 +2,7 @@
 @import url(../CSS/Utiles.css);
 
 .row-2 {
-    background: url(../IMG/deafults/bookcase-img.jpg.jpg) center no-repeat;
+    background: url(./IMG/deafults/bookcase-img.jpg.jpg) center no-repeat;
     background-size: cover;
 }
 
