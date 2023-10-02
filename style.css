@@ -187,3 +187,24 @@ h2::after {
 	transition: all ease .5s;
 	top: -40rem;
 }
+.my-5 .container{
+    background-color:#cc3444;
+    width: 100%;
+}
+
+.footer-container{
+    width: 100%;
+}
+
+.container{
+    background-color: #FFF;
+    max-width: 100%;
+}
+.my-5{
+    background-color:#cc3444;
+	
+  }
+.space{
+    height: 230px;
+    background-color: #cc3444;
+}
