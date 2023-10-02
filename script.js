@@ -149,3 +149,15 @@ sortednovelsPerRate.slice(8,12).forEach(book => {
     bestNovelsCarouselItem3.innerHTML += (cartCreator(book));
 })
 
+// Get all the button elements by its class
+var addToCartButtons = document.querySelectorAll(".btn.btn-outline-danger");
+
+// Add a click event listener to the button
+
+addToCartButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        alert("Item added to cart!");
+    });
+});
+
+

@@ -17,24 +17,32 @@
 
 
 .nav-bar  {
-    height: 4.7rem;
+    /* height: 4.7rem; */
 }
 
 .nav-bar li {
     transition: all ease .2s;
+	margin: 1rem 2rem;
+	
+}
+.nav-bar li:hover{
+    transform: translateY(-2px);
+	transition: transform ease 0.35s;
 }
 
 .nav-bar .categorie:hover {
-    height: 5rem;
-    font-size: 2.4rem;
+    /* height: 5rem; */
     border-radius: 0 0 .5rem .5rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0 .6rem 1.2rem -.2rem,
         rgba(0, 0, 0, 0.3) 0 .3rem .7rem -.3rem;
 }
 
 .nav-bar a{
-    border-radius: inherit;
-    line-height: 4.7rem;
+    border-radius: 1rem;
+	text-decoration: none;
+	font-size: 2rem;
+	padding: 1rem 1.5rem;
+    /* line-height: 4.7rem; */
 }
 
 .upper-main-body .carousel:hover ,.philosophy-img-pop-up .carousel:hover , .novels-img-pop-up .carousel:hover {
@@ -186,4 +194,25 @@ h2::after {
 	z-index: 1;
 	transition: all ease .5s;
 	top: -40rem;
+}
+.my-5 .container{
+    background-color:#cc3444;
+    width: 100%;
+}
+
+.footer-container{
+    width: 100%;
+}
+
+.container{
+    background-color: #FFF;
+    max-width: 100%;
+}
+.my-5{
+    background-color:#cc3444;
+	
+  }
+.space{
+    height: 230px;
+    background-color: #cc3444;
 }
