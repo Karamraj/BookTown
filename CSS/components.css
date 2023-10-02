@@ -1,0 +1,9 @@
+.warm-flame-gradient{
+    background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+}
+.form-color{
+    background-color: skyblue;
+}
+.input-color{
+    background-color: rgb(224, 224, 224);
+}

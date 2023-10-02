@@ -10,70 +10,96 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../CSS/components.css" />
     <title>SignUp Page</title>
   </head>
-  <body>
-    <section class="container p-5">
-      <form class="row g-3 needs-validation border border-danger p-5 rounded" novalidate>
-        <div class="col-md-4">
-          <label for="validationCustom01" class="form-label">First name</label>
+  <body class="warm-flame-gradient">
+    <div
+      class="container d-flex justify-content-center align-items-center vh-100"
+    >
+      <form
+        class="needs-validation border border-danger p-5 form-color shadow rounded-2"
+        novalidate
+      >
+        <h1 class="mb-4">SIGN UP</h1>
+
+        <div class="form-outline mb-4">
+          <label class="form-label fw-bold" for="validationCustom01"
+            >First Name</label
+          >
           <input
             type="text"
-            class="form-control"
             id="validationCustom01"
+            class="form-control form-control-lg shadow input-color rounded"
+            placeholder="Enter your first name here..."
             required
           />
           <div class="valid-feedback">Looks good!</div>
         </div>
-        <div class="col-md-4">
-          <label for="validationCustom02" class="form-label">Last name</label>
+        <div class="form-outline mb-4">
+          <label for="validationCustom02" class="form-label fw-bold"
+            >Last name</label
+          >
           <input
             type="text"
-            class="form-control"
+            class="form-control form-control-lg shadow input-color rounded"
             id="validationCustom02"
+            placeholder="Enter your last name here..."
             required
           />
           <div class="valid-feedback">Looks good!</div>
         </div>
-        <div class="col-md-4">
-          <label for="validationCustomUsername" class="form-label"
+        <div class="form-outline mb-4">
+          <label for="validationCustomUsername" class="form-label fw-bold"
             >Username</label
           >
           <div class="input-group has-validation">
-            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <span class="input-group-text shadow" id="inputGroupPrepend"
+              >@</span
+            >
             <input
               type="text"
-              class="form-control"
+              class="form-control form-control-lg shadow input-color rounded"
               id="validationCustomUsername"
               aria-describedby="inputGroupPrepend"
+              placeholder="Enter your username here..."
               required
             />
             <div class="invalid-feedback">Please choose a username.</div>
           </div>
         </div>
-        <div class="col-md-4">
-          <label for="validationCustom03" class="form-label">City</label>
+        <div class="form-outline mb-4">
+          <label for="validationCustom03" class="form-label fw-bold"
+            >City</label
+          >
           <input
             type="text"
-            class="form-control"
+            class="form-control form-control-lg shadow input-color rounded"
             id="validationCustom03"
+            placeholder="Enter your city here..."
             required
           />
           <div class="invalid-feedback">Please provide a valid city.</div>
         </div>
-        <div class="col-md-8">
-          <label for="validationCustom05" class="form-label">Address</label>
+        <div class="form-outline mb-4">
+          <label for="validationCustom05" class="form-label fw-bold"
+            >Address</label
+          >
           <textarea
             type="text"
-            class="form-control"
+            class="form-control shadow input-color rounded"
             id="validationCustom05"
+            placeholder="Enter your address here..."
             required
           ></textarea>
           <div class="invalid-feedback">Please provide a valid Address.</div>
         </div>
         <div class="col-12">
-          <div class="form-check">
+          <div class="form-check mb-4">
             <input
               class="form-check-input"
               type="checkbox"
@@ -81,7 +107,7 @@
               id="invalidCheck"
               required
             />
-            <label class="form-check-label" for="invalidCheck">
+            <label class="form-check-label fw-bold" for="invalidCheck">
               Agree to terms and conditions
             </label>
             <div class="invalid-feedback">
@@ -89,12 +115,21 @@
             </div>
           </div>
         </div>
-        <div class="d-flex gap-3">
-          <button id="submitBtn" class="btn btn-danger" type="submit">Submit form</button>
-          <button class="btn btn-outline-danger" type="reset">Reset</button>
+        <div class="d-flex align-items-center justify-content-center gap-3">
+          <button
+            id="submitBtn"
+            class="btn btn-danger shadow rounded"
+            type="submit"
+          >
+            Submit form
+          </button>
+          <button class="btn btn-danger  shadow" type="reset">
+            Reset
+          </button>
         </div>
       </form>
-    </section>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
@@ -103,3 +138,4 @@
     <script src="./script.js"></script>
   </body>
 </html>
+
