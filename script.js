@@ -1,4 +1,4 @@
-import books from "../DataBase/Data.js";
+import books from "./DataBase/Data.js";
 
 // new books section
 
