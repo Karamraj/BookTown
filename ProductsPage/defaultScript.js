@@ -136,16 +136,24 @@ window.addEventListener("click", (el) => {
     };
     dataState.push(data);
     localStorage.setItem("data", JSON.stringify(dataState));
+    //Used sweetalert
+    Swal.fire({
+      icon: "success", 
+      title: "Added to Cart!",
+      text: `${data.name} has been added to your cart.`,
+      showConfirmButton: false, // Remove the OK button
+      timer: 2000, // Auto close the alert after 2 seconds
+    });
   }
 });
 
 // added to cart , alert section
 
-window.addEventListener("click", (el) => {
-  if (el.target.innerText == "Add to Cart ") {
-    alert(`${el.target.parentElement.children[0].innerText} Added to cart!`);
-  }
-});
+// window.addEventListener("click", (el) => {
+  // if (el.target.innerText == "Add to Cart ") {
+  //   alert(`${el.target.parentElement.children[0].innerText} Added to cart!`);
+  // };
+// });
 
 // bi-list section
 

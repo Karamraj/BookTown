@@ -27,3 +27,5 @@ To run the BookTown Project locally, follow these steps:
 
 ## Contributing
 We welcome contributions from anyone interested in improving the BookTown! To contribute, please fork the repository and submit a pull request with your changes.
+
+Contributors Join Our Discord Server - https://discord.gg/T8m6Qh5aw5

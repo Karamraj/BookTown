@@ -36,7 +36,15 @@ window.addEventListener("click", (el) => {
 
 window.addEventListener("click", (el) => {
   if (el.target.innerText === "Add to Cart "){
-    alert(`${el.target.parentElement.children[0].innerText} Added to cart!`);
+    // alert(`${el.target.parentElement.children[0].innerText} Added to cart!`);
+    Swal.fire({
+      icon: "success", 
+      title: "Added to Cart!",
+      text: `${el.target.parentElement.children[0].innerText} has been added to your cart.`,
+      showConfirmButton: false, // Remove the OK button
+      timer: 2000, // Auto close the alert after 2 seconds
+    });
+    
 }});
 
 
