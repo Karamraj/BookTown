@@ -1,5 +1,6 @@
 export default function books() {
   return [
+       
     {
       cover:
         "https://images-na.ssl-images-amazon.com/images/I/61tqfa+xbWL._AC_UL226_SR226,226_.jpg",
@@ -321,6 +322,44 @@ export default function books() {
             <i class="bi bi-star-fill text-warning"></i>
             <i class="bi bi-star-fill text-warning"></i>
             <i class="bi bi-star-half text-warning"></i>
+            </div>`,
+    },
+     {
+      cover:
+        "Ramayan.jpg",
+      name: "Verity",
+      price: "7.26",
+      date: 1,
+      deal: false,
+      categorie: ["Religional novel"],
+      gone:false,
+
+      rating: 4.6,
+      stars: `<div class="ratings">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-half text-warning"></i>
+            <i class="bi bi-star text-warning"></i>
+            </div>`,
+    },
+     {
+      cover:
+        "Mahabharat.jpg",
+      name: "Verity",
+      price: "1.26",
+      date: 1,
+      deal: false,
+      categorie: ["Religional novel"],
+      gone:false,
+
+      rating: 4.6,
+      stars: `<div class="ratings">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-half text-warning"></i>
+            <i class="bi bi-star text-warning"></i>
             </div>`,
     },
     {
