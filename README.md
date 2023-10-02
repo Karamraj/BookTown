@@ -1,3 +1,5 @@
+![logo (1)](https://github.com/Karamraj/BookTown/assets/92857243/e861b9af-9f7c-4cda-b833-d5c14a615025)
+
 # BookTown
 
 BookTown is a fully functional website for purchasing books. It was created using HTML, CSS, Bootstrap, and vanila JavaScript. Users can browse through a variety of books, add them to their cart, and checkout securely. The website also includes a search function and user account management.
