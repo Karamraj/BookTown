@@ -24,8 +24,10 @@ body {
 }
 
 .nav-bar li {
-  transition: all ease 0.2s;
-  margin: 1rem 2rem;
+
+  transition: all ease .2s;
+	margin: 1rem 1.5rem;
+
 }
 .nav-bar li:hover {
   transform: translateY(-2px);
@@ -39,12 +41,14 @@ body {
     rgba(0, 0, 0, 0.3) 0 0.3rem 0.7rem -0.3rem;
 }
 
-.nav-bar a {
-  border-radius: 1rem;
-  text-decoration: none;
-  font-size: 2rem;
-  padding: 1rem 1.5rem;
-  /* line-height: 4.7rem; */
+
+
+.nav-bar a{
+    border-radius: 1rem;
+	text-decoration: none;
+	font-size: 1.3rem;
+	padding: 1rem 1.2rem;
+    /* line-height: 4.7rem; */
 }
 
 .upper-main-body .carousel:hover,
@@ -216,14 +220,27 @@ main .book-name {
   width: 100%;
 }
 
-.container {
-  background-color: #fff;
-  max-width: 100%;
+
+.container{
+    background-color: #FFF;
+    max-width: 100%;
 }
-.my-5 {
-  background-color: #cc3444;
+.my-5{
+    background-color:#cc3444;
+	
+  }
+.space{
+    height: 230px;
+    background-color: #cc3444;
 }
-.space {
-  height: 230px;
-  background-color: #cc3444;
+
+@media screen and (min-width:768px) and (max-width:1024px){
+	.nav-bar li a {
+		font-size: 0.9rem;
+         padding: 1rem 0.2rem;
+	}
+	.nav-bar li {
+		margin: 1rem;
+	}
 }
+
