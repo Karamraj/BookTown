@@ -89,3 +89,9 @@ Thank you for your interest in contributing to our project! We appreciate any co
 
 <a href="https://github.com/Karamraj"><img src="https://res.cloudinary.com/dxxeks4o5/image/upload/v1696338265/92857243_xj33at.jpg" height="80px"/></a>
 
+<b>Follow Me At</b>
+<br>
+Github - https://github.com/Karamraj
+<br>
+Linkedin - https://www.linkedin.com/in/karamraj-singh-anand/
+
