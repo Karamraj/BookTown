@@ -14,8 +14,12 @@
   border-radius: 0.6rem;
   text-align: center;
   position: relative;
+  transition: .3s ease;
 }
-.thumb-wrapper h4 {
+.thumb-wrapper:hover{
+  transform: scale(1.05); 
+}
+ h4 {
   font-size: 1.8rem;
 }
 .thumb-wrapper h4,
@@ -42,7 +46,10 @@
   max-width: 22.6rem;
   min-height: 40.1rem;
 }
-
+.img-fluid:hover{
+  transition: .5s ease;
+  transform: scale(1.05);
+}
 .book-name {
   min-height: 4.3rem;
 }
