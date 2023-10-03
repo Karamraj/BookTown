@@ -5,7 +5,9 @@
     form.addEventListener(
       "submit",
       (event) => {
-        if (!form.checkValidity()) {
+        const emailOrPhoneInput = form.querySelector("#validationCustom04");
+        const emailOrPhoneValue = emailOrPhoneInput.value.trim();
+        if (!form.checkValidity() || !isEmailOrPhoneUnique(emailOrPhoneValue)) {
           event.preventDefault();
           event.stopPropagation();
         }
@@ -14,6 +16,20 @@
       false
     );
   });
+   // Function to check if email or phone number is unique
+   function isEmailOrPhoneUnique(value) {
+    // Retrieve previously stored user data from localStorage
+    const storedUserData = JSON.parse(localStorage.getItem("userData"));
+
+    if (storedUserData && storedUserData.emailOrPhone === value) {
+      // Not unique - show error message
+      const emailOrPhoneInput = document.querySelector("#validationCustom04");
+      emailOrPhoneInput.classList.add("is-invalid");
+      return false;
+    }
+
+    return true;
+  }
 })();
 
 // onsubmit section
@@ -23,6 +39,8 @@ const form = document.querySelector(".needs-validation");
 
 submitBtn.addEventListener("click", (event) => {
   userData = {
+    emailOrPhone:
+    event.target.parentElement.parentElement.children[6].children[1].value,
     firtsName:
       event.target.parentElement.parentElement.children[0].children[1].value,
       lastName:
