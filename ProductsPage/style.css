@@ -2,12 +2,52 @@
 @import url(../CSS/reset.css);
 @import url(../Home-Page/style.css);
 
+
+
+
+
+
 .main-header {
   height: 11rem;
+  
 }
+
+
+.nav-bar {
+  height: 50px;
+  display: flex;
+
+  
+  
+
+}
+
+
 .main-body {
+  z-index: -6;
+  width: 100%;
   margin-top: 12.9rem;
+  height: 450px;
+  background: rgb(210,9,102);
+background: linear-gradient(193deg, rgba(221,9,102,0.375875350140056) 0%, rgba(182,35,35,1) 83%);
 }
+
+.dropdown {
+  width: 40px;
+}
+.dropdown-toggle {
+  background: rgb(94,65,75);
+  background: linear-gradient(90deg, rgba(94,65,75,1) 35%, rgba(255,0,70,1) 100%);
+  font-size: medium;
+  color: #fff;
+  
+}
+
+
+
+
+
+
 .thumb-wrapper {
   padding: 2.5rem 1.5rem;
   background: #fff;
@@ -52,10 +92,23 @@
 }
 .book-name {
   min-height: 4.3rem;
+  
 }
 
 .second-navbar-bi-list-clicked {
 	z-index: 1;
 	transition: all ease .5s;
 	top: -40rem;
+  
+}
+
+.search-button {
+  background:transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.search-button i {
+  font-size: 1.5rem; 
 }
