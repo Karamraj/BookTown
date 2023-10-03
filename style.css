@@ -22,7 +22,7 @@ body {
 }
 
 .nav-bar {
-  width: 70%;
+  width: 80%;
   margin: auto;
   /* height: 4.7rem; */
 }
@@ -257,6 +257,21 @@ main .book-name {
   width: 100%;
 }
 
+.footer-heading{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+  font-weight: bold;
+  width: 150px;
+}
+
+.footer-text{
+  font-size:1.4rem;
+  color: rgb(215, 203, 203);
+}
+
+.contact-details{
+  font-weight: bold;
+}
 
 .container {
   background-color: #FFF;
