@@ -271,6 +271,11 @@ main .book-name {
   font-size: large;
   font-weight: bold;
   width: 150px;
+  transition: all ease 0.3s;
+}
+
+.footer-heading:hover{
+  transform: scale(1.2);
 }
 
 .footer-text{
@@ -278,8 +283,15 @@ main .book-name {
   color: rgb(215, 203, 203);
 }
 
+.footer-text:hover{
+  text-decoration: underline;
+  transition: all ease 0.3s;
+  transform: scale(1.05); 
+}
+
 .contact-details{
   font-weight: bold;
+  color: white;
 }
 
 .container {
@@ -306,5 +318,15 @@ main .book-name {
   .nav-bar li {
     margin: 1rem;
   }
+}
+
+.social-links {
+  margin-left:1250px;
+  margin-bottom: 10px;
+  padding-bottom: -50px;
+  flex-wrap: wrap;
+  gap: 8px;
+  display: flex;
+  width: 43%;
 }
 
