@@ -151,7 +151,7 @@ sortednovelsPerRate.slice(8,12).forEach(book => {
 })
 
 // Get all the button elements by its class
-var addToCartButtons = document.querySelectorAll(".btn.btn-outline-danger");
+var addToCartButtons = document.querySelectorAll(".add-to-cart-btn");
 
 // Add a click event listener to the button
 
