@@ -111,6 +111,9 @@ h2::after {
   min-height: 32.5rem;
   text-align: center;
   overflow: hidden;
+  /* below fixes side shadows of book item got cut */
+  padding-left: 2rem; 
+  padding-right: 2rem;
 }
 
 .carousel .thumb-wrapper {
