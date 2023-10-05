@@ -9,7 +9,9 @@ body {
   background: url(./IMG/deafults/bookcase-img.jpg.jpg) center no-repeat;
   background-size: cover;
 }
-
+.row{
+  margin-bottom: 10px;
+}
 .in-img-text h1,
 .in-img-text h3 {
   color: rgba(255, 255, 255, 0.895);
@@ -96,6 +98,9 @@ h2::after {
   width: 85%;
   margin: auto;
   padding: 0 2rem;
+  /* centre aligns the books in slider */
+  display: flex;
+  justify-content: center;
 }
 
 .carousel-inner{
@@ -115,8 +120,18 @@ h2::after {
   padding-left: 2rem; 
   padding-right: 2rem;
 }
+  /* Added to make height of all slider con of books same */
 
+.bookCon{
+  height: 585px;
+}
+.addToCart-btn{
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+}
 .carousel .thumb-wrapper {
+  height: 580px;
   padding: 0.6rem;
   background: #fff;
   border-radius: 0.6rem;
@@ -252,6 +267,7 @@ h2::after {
 
 main .book-name {
   min-height: 3.5rem;
+  height: 9rem;
 }
 
 .second-navbar-bi-list-clicked {
