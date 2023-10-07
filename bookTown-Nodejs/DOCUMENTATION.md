@@ -46,12 +46,12 @@ git clone https://github.com/YourUsername/BookTown.git
 git checkout -b feature/my-new-feature
 ```
 
-1. Setup Node js Environment & Modules
+4. Setup Node js Environment & Modules
 
-2. Run the app with:
+5. Run the app with:
    
 ```bash
-git checkout -b feature/my-new-feature
+npm run build
 ```
 6. Push your changes to your fork on GitHub:
 
