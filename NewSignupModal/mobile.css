@@ -1,0 +1,55 @@
+@media screen and (min-width:1024px) and (max-width:1240px){
+    .container{
+        height: 100%;
+    }
+    .sign-img{
+        width: 100%;
+        border-radius: 0%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+   .sign-img{
+    width: 140%;
+    border-radius: 4rem;
+   }
+   .right-container{
+    width: 50%;
+   }
+   label{
+    font-size: 1.1rem;
+   }
+}
+
+@media screen and (min-width:640px) and (max-width:768px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-container{
+        width: 100%;
+    }
+    .right-container{
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:300px) and (max-width:640px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-container{
+        width: 100%;
+    }
+    .right-container{
+        width: 100%;
+    }
+    .sign-img{
+        width: 200%;
+        height: 100%;
+    }
+}
