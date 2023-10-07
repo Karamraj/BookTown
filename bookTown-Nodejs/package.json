@@ -12,6 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "@types/typescript": "^2.0.0",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
@@ -20,6 +22,7 @@
     "helmet": "^7.0.0",
     "mongodb": "^6.1.0",
     "mongoose": "^7.5.3",
+    "mongoose-paginate": "^5.0.3",
     "nodemon": "^3.0.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
