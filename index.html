@@ -79,7 +79,7 @@
                 Purchase
             </button>
         </span>
-        <a class="link" href="./SignUpModal/index.html" target="_blank" rel="noopener noreferrer">
+        <a class="link" href="./SignUpModal/index.html" rel="noopener noreferrer">
             <button type="button" class="btn btn-outline-danger">
                 <svg class="" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-person-fill" viewBox="0 0 16 16">
@@ -171,7 +171,7 @@
                 <i class="bi bi-star text-warning"></i>
                 </div>
               <p class="item-price text-secondary"><strike></strike><b>$11.26</b></p>
-              <button class="btn btn-outline-danger"> Add to Cart <i class="bi bi-bag"></i></button>
+              <button class="btn btn-outline-danger add-to-cart-btn"> Add to Cart <i class="bi bi-bag"></i></button>
             </div>
           </div>
       </div>
@@ -220,7 +220,7 @@
       <div class="row shadow border border-2 border-danger rounded-4 border-opacity-50 p-3">
         <div class="col-md-12">
             <h2>best of <b>BookTown</b></h2>
-          <div id="myCarousel1" class="carousel slide carousel-dark" data-bs-ride="carousel" data-ride="carousel">
+          <div id="myCarousel1" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -240,10 +240,10 @@
                 </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#myCarousel1" data-slide="prev">
+            <a class="carousel-control-prev" href="#myCarousel1" data-slide="prev" role="button" onclick="$('#myCarousel1').carousel('prev')">
               <i class="fa fa-angle-left"></i>
             </a>
-            <a class="carousel-control-next" href="#myCarousel1" data-slide="next">
+            <a class="carousel-control-next" href="#myCarousel1"  data-slide="next" role="button" onclick="$('#myCarousel1').carousel('next')">
               <i class="fa fa-angle-right"></i>
             </a>
           </div>
@@ -254,7 +254,7 @@
       <div class="row shadow border border-2 border-danger rounded-4 border-opacity-50 p-3">
         <div class="col-md-12">
           <h2>Best <b>Deals</b></h2>
-          <div id="myCarousel" class="carousel slide carousel-dark" data-bs-ride="carousel" data-ride="carousel">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel" >
             <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -274,17 +274,18 @@
                 </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <a class="carousel-control-prev"  href="#myCarousel" data-slide="prev" role="button" onclick="$('#myCarousel').carousel('prev')">
               <i class="fa fa-angle-left"></i>
             </a>
-            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <a class="carousel-control-next" href="#myCarousel"  data-slide="next" role="button" onclick="$('#myCarousel').carousel('next')">
               <i class="fa fa-angle-right"></i>
             </a>
           </div>
         </div>
       </div>
     </section>
-    <section class="philosophy-img-pop-up">
+    <section class="philosophy-img-pop-up pb-5 pt-5">
+      <div class="border border-2 border-danger rounded-4 border-opacity-50 p-3">
       <a href="./ProductsPage/LinkedHTMLs/philosophy-index.html" target="_blank"><div id="carouselExampleSlidesOnly" class="carousel slide d-none d-md-block" data-bs-ride="carousel"
         data-interval="2000">
         <div class="carousel-inner">
@@ -303,15 +304,16 @@
             <h4 class="d-block fs-48 position-absolute bottom-0 w-100 text-center py-5 mb-0 text-light bg-dark bg-opacity-50 rounded-4">Read Philosophy books here.</h4>
           </div>
       </div></a>
+    </div>
     </section>
     <section class="Philosophy">
       <div class="row shadow border border-2 border-danger rounded-4 border-opacity-50 p-3">
         <div class="col-md-12">
           <h2>best of <b>Philosophy</b></h2>
-          <div id="myCarousel4" class="carousel slide carousel-dark" data-bs-ride="carousel" data-ride="carousel">
+          <div id="myCarousel4" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel4" data-slide-to="1"></li>
             </ol>
             <div class="carousel-inner">
               <div class="item carousel-item active">
@@ -323,10 +325,10 @@
                 </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#myCarousel4" data-slide="prev">
+            <a class="carousel-control-prev"  href="#myCarousel4" data-slide="prev" role="button" onclick="$('#myCarousel4').carousel('prev')">
               <i class="fa fa-angle-left"></i>
             </a>
-            <a class="carousel-control-next" href="#myCarousel4" data-slide="next">
+            <a class="carousel-control-next" href="#myCarousel4"  data-slide="next" role="button" onclick="$('#myCarousel4').carousel('next')">
               <i class="fa fa-angle-right"></i>
             </a>
           </div>
@@ -337,11 +339,11 @@
       <div class="row shadow border border-2 border-danger rounded-4 border-opacity-50 p-3">
         <div class="col-md-12">
           <h2>Best of <b>self-development</b></h2>
-          <div id="myCarousel5" class="carousel slide carousel-dark" data-bs-ride="carousel" data-ride="carousel">
+          <div id="myCarousel5" class="carousel slide" data-ride="carousel" >
             <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel5" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel5" data-slide-to="1"></li>
+              <li data-target="#myCarousel5" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
               <div class="item carousel-item active">
@@ -357,10 +359,10 @@
                 </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#myCarousel5" data-slide="prev">
+            <a class="carousel-control-prev"  href="#myCarousel5" data-slide="prev" role="button" onclick="$('#myCarousel5').carousel('prev')">
               <i class="fa fa-angle-left"></i>
             </a>
-            <a class="carousel-control-next" href="#myCarousel5" data-slide="next">
+            <a class="carousel-control-next" href="#myCarousel5"  data-slide="next" role="button" onclick="$('#myCarousel5').carousel('next')">
               <i class="fa fa-angle-right"></i>
             </a>
           </div>
@@ -391,11 +393,11 @@
       <div class="row shadow border border-2 border-danger rounded-4 border-opacity-50 p-3">
         <div class="col-md-12">
           <h2>Best of <b>novels</b></h2>
-          <div id="myCarousel6" class="carousel slide carousel-dark" data-bs-ride="carousel" data-ride="carousel">
+          <div id="myCarousel6" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel6" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel6" data-slide-to="1"></li>
+              <li data-target="#myCarousel6" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
               <div class="item carousel-item active">
@@ -411,10 +413,10 @@
                 </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#myCarousel6" data-slide="prev">
+            <a class="carousel-control-prev"  href="#myCarousel6" data-slide="prev" role="button" onclick="$('#myCarousel6').carousel('prev')">
               <i class="fa fa-angle-left"></i>
             </a>
-            <a class="carousel-control-next" href="#myCarousel6" data-slide="next">
+            <a class="carousel-control-next" href="#myCarousel6"  data-slide="next" role="button" onclick="$('#myCarousel6').carousel('next')">
               <i class="fa fa-angle-right"></i>
             </a>
           </div>
@@ -441,10 +443,10 @@
         <div class="row">
           <!-- Grid column -->
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">
+            <h6 class="footer-heading text-uppercase mb-3 pb-3 border-4 border-bottom border-white">
               BookTown
             </h6>
-            <p>
+            <p class="footer-text">
               BookTown is one of the most popular online web purchasing store that have 1000+ book varieties
             </p>
           </div>
@@ -454,18 +456,18 @@
 
           <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-            <p>
-              <a class="text-white">Book Titles</a>
+            <h6 class="footer-heading text-uppercase mb-3 pb-3 border-4 border-bottom border-white">Products</h6>
+            <p class="footer-text">
+              <a href="/" class="text-white text-decoration-none">Book Titles</a>
             </p>
-            <p>
-              <a class="text-white">All Books</a>
+            <p class="footer-text">
+              <a href="/" class="text-white text-decoration-none">All Books</a>
             </p>
-            <p>
-              <a class="text-white">Publishes</a>
+            <p class="footer-text">
+              <a href="/" class="text-white text-decoration-none">Publishes</a>
             </p>
-            <p>
-              <a class="text-white">Select Books</a>
+            <p class="footer-text">
+              <a href="/" class="text-white text-decoration-none">Select Books</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -474,20 +476,20 @@
 
           <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">
+            <h6 class="footer-heading text-uppercase mb-3 pb-3 border-4 border-bottom border-white">
               Useful links
             </h6>
-            <p>
-              <a class="text-white">Your Account</a>
+            <p class="footer-text">
+              <a href="/" class="text-white text-decoration-none">Your Account</a>
             </p>
-            <p>
-              <a class="text-white">Become an Affiliate</a>
+            <p class="footer-text">
+              <a href="/" class="text-white text-decoration-none">Become an Affiliate</a>
             </p>
-            <p>
-              <a class="text-white">Shipping Rates</a>
+            <p class="footer-text">
+              <a href="/" class="text-white text-decoration-none">Shipping Rates</a>
             </p>
-            <p>
-              <a class="text-white">Help</a>
+            <p class="footer-text">
+              <a href="/" class="text-white text-decoration-none">Help</a>
             </p>
           </div>
 
@@ -496,11 +498,10 @@
 
           <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-            <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
-            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            <h6 class="footer-heading text-uppercase mb-3 pb-3 border-4 border-bottom border-white">Contact</h6>
+            <p class="footer-text"><span class="contact-details">Address: </span>New York, NY 10012, US</p>
+            <p class="footer-text"><span class="contact-details">Email Id: </span><a href="mailto:info@gmail.com" class="text-decoration-none">info@gmail.com</a></p>
+            <p class="footer-text"><span class="contact-details">Call Us: </span><a href="tel:=01 234 567 89" class="text-decoration-none">+ 01 234 567 88</a></p>
           </div>
           <!-- Grid column -->
         </div>
@@ -518,7 +519,7 @@
             <!-- Copyright -->
             <div class="p-3">
               © 2023 Copyright:
-              <a class="text-white" href="https://mdbootstrap.com/"
+              <a class="text-white" href="index.html"
                  >BookTown.com</a
                 >
             </div>
@@ -527,10 +528,10 @@
           <!-- Grid column -->
 
           <!-- Grid column -->
-          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+          <div class="social-links text-md-end pt-3 pt-md-0">
             <a
             class="btn btn-primary btn-floating m-1"
-            style="background-color: #55acee;"
+            style="background-color: #55acee; border: none; border-radius: 15px;"
             href=""
             role="button"
             ><i class="bi bi-twitter"></i
@@ -538,7 +539,7 @@
     
           <a
             class="btn btn-primary btn-floating m-1"
-            style="background-color: #dd4b39;"
+            style="background-color: #dd4b39; border: none; border-radius: 15px;"
             href=""
             role="button"
             ><i class="bi bi-google"></i
@@ -546,7 +547,7 @@
     
           <a
             class="btn btn-primary btn-floating m-1"
-            style="background-color: #ac2bac;"
+            style="background-color: #ac2bac; border: none; border-radius: 15px;"
             href=""
             role="button"
             ><i class="bi bi-instagram"></i
@@ -554,14 +555,14 @@
     
           <a
             class="btn btn-primary btn-floating m-1"
-            style="background-color: #0082ca;"
+            style="background-color: #0082ca; border: none; border-radius: 15px;"
             href=""
             role="button"
             ><i class="bi bi-linkedin"></i
           ></a>
           <a
             class="btn btn-primary btn-floating m-1"
-            style="background-color: #333333;"
+            style="background-color: #333333; border: none; border-radius: 15px"
             href=""
             role="button"
             ><i class="bi bi-github"></i
@@ -577,11 +578,19 @@
   <!-- Footer -->
 </div>
 <!-- End of .container -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
+    <script>
+      function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
   <script type="module" src="/JS/app.js"></script>
   <script type="module" src="./script.js"></script>
 </body>
