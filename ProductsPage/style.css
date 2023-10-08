@@ -111,3 +111,55 @@ background: linear-gradient(193deg, rgba(221,9,102,0.375875350140056) 0%, rgba(1
 .search-button i {
   font-size: 1.5rem; 
 }
+
+.my-5 .container {
+  background-color: #cc3444;
+  width: 100%;
+}
+
+.footer-container {
+  width: 100%;
+}
+
+.footer-heading{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+  font-weight: bold;
+  width: 150px;
+  transition: all ease 0.3s;
+}
+
+.footer-heading:hover{
+  transform: scale(1.2);
+}
+
+.footer-text{
+  font-size:1.4rem;
+  color: rgb(215, 203, 203);
+}
+
+.footer-text:hover{
+  text-decoration: underline;
+  transition: all ease 0.3s;
+  transform: scale(1.05); 
+}
+
+.contact-details{
+  font-weight: bold;
+  color: white;
+}
+
+.container {
+  background-color: #FFF;
+  max-width: 100%;
+}
+
+.my-5 {
+  background-color: #cc3444;
+
+}
+
+.space {
+  height: 230px;
+  background-color: #cc3444;
+}
