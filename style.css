@@ -340,13 +340,13 @@ main .book-name {
 }
 
 .social-links {
-  margin-left:1250px;
+  /* margin-left:1250px; */
   margin-bottom: 10px;
   padding-bottom: -50px;
   flex-wrap: wrap;
   gap: 8px;
   display: flex;
-  width: 43%;
+  width: 32%;
 }
 
 
