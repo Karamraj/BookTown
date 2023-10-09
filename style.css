@@ -342,11 +342,7 @@ main .book-name {
 }
 
 .social-links {
-<<<<<<< HEAD
-  margin-left:1000px;
-=======
-  /* margin-left:1250px; */
->>>>>>> 1350916ce7bdae5f03c5ceb5af82c761142526ee
+  /* margin-left:1000px; */
   margin-bottom: 10px;
   padding-bottom: -50px;
   flex-wrap: wrap;
