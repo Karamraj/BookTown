@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    /* background: url('./images/flat-mountains.png') center no-repeat; */
+   
+    
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 5rem ;
+
+}
+.left-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sign-img{
+    width: 80%;
+    height: 100%;
+}
+.right-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 35%;
+    align-items: center;
+    background-color:rgba(194, 190, 190, 0.099);
+    backdrop-filter: blur(5px);
+    padding: .4rem 0;
+    border-radius: 1rem;
+
+}
+.sign-head{
+    font-size: 2.5rem;
+    color: rgb(248, 8, 28);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+}
+label{
+    color: black;
+    margin-top: .9rem;
+    font-size: 1.2rem;
+}
+
+.input{
+    border: 1px solid gray;
+    border-radius: 0.3rem;
+    height: 2.3rem;
+    margin-top: 0.3rem;
+    font-size: 1.3rem;
+    padding: .2rem .3rem;
+
+}
+input:focus{
+    outline: transparent;
+}
+input#checkbox{
+    width: 1rem;
+    height: 1rem;
+}
+.check{
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+.policy{
+    margin-left: .4rem;
+}
+.buttons{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;;
+    margin-top: .6rem;
+}
+.btn{
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  margin: .4rem .5rem;
+  border: 1px solid gray;
+  border-radius: .4rem;
+  background-color: rgb(248, 8, 28);
+  color:white;
+  width: 100%;
+  font-weight: bold;
+  border: 1px solid rgb(248, 8, 28);
+  transition: box-shadow ease 0.3s;
+}
+.btn:hover{
+    box-shadow: blueviolet 2px 2px 10px ;
+
+}
+.form a{
+    text-decoration: none;
+    margin: 0.2rem auto;
+    color: white;
+    
+}
+

@@ -11,7 +11,7 @@ const newestBookFiltred2 = books().filter(book => book.date <= 8 && book.date > 
 const newestBookFiltred3 = books().filter(book => book.date <= 12 && book.date > 8);
 
 function cartCreator(book) {
-    return `<div class="col-lg-3 col-sm-6">
+    return `<div class="bookCon col-lg-3 col-sm-6">
         <div class="thumb-wrapper">
             <div class="img-box">
                 <img src="${book.cover}" class="img-fluid" alt="book img">
@@ -20,7 +20,7 @@ function cartCreator(book) {
                 <h4 class="book-name">${book.name}</h4>
                     ${book.stars}
                 <p class="item-price"><strike>${book.lastPrice || ""}</strike><b>$${book.price}</b></p>
-                <button class="btn btn-outline-danger"> Add to Cart <i class="bi bi-bag"></i></button>
+                <button class="btn addToCart-btn btn-outline-danger"> Add to Cart <i class="bi bi-bag"></i></button>
             </div>
         </div>
     </div>`
@@ -125,7 +125,7 @@ selfDevBooks.slice(6,9).forEach(book => {
     bestSelfDevCarouselItem3.innerHTML += (cartCreator(book));
 })
 
-// best of snovels section
+// best of novels section
 
 const bestNovelsCarouselItem1 = document.getElementById("bestNovelsCarouselItem1");
 const bestNovelsCarouselItem2 = document.getElementById("bestNovelsCarouselItem2");
@@ -151,7 +151,7 @@ sortednovelsPerRate.slice(8,12).forEach(book => {
 })
 
 // Get all the button elements by its class
-var addToCartButtons = document.querySelectorAll(".btn.btn-outline-danger");
+var addToCartButtons = document.querySelectorAll(".add-to-cart-btn");
 
 // Add a click event listener to the button
 
@@ -162,3 +162,14 @@ addToCartButtons.forEach(function(button) {
 });
 
 
+// Go to top button 
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
