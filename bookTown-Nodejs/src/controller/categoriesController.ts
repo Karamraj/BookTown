@@ -1,4 +1,4 @@
-const helper = require('../database/categoriesHelper');
+const helper = require('../database/categoriesRepo');
 
 export async function categoriesList(req, res) {
     try {

@@ -1,4 +1,3 @@
-require('dotenv').config()
 const catModel = require('../models/categoriesModel');
 
 export async function categoriesList(pageSize, offset) {

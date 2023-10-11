@@ -1,4 +1,4 @@
-const booksHelper = require('../database/booksHelper');
+const booksHelper = require('../database/booksRepo');
 
 export async function exploreBooks(req, res) {
     try {
