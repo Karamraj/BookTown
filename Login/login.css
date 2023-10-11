@@ -1,133 +1,84 @@
-body{
-    background-color: black;
-}
-.content{
-    position: absolute;
-    top:0;
-    right: 0;
-    width: 42%;
-    height: 100%;
-    background: transparent;
-}
-.content .formbox{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background: transparent;
-    color: white;
-    backdrop-filter: blur(5px);
-}
-.icon{
-    color: white;
-}
-.formbox h2{
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Kanit', sans-serif;
-}
-.formbox .input1{
-    padding: 0px;
-    width: 263px;
-    height: 41px;
-    border-bottom: 1px solid white;
-    margin: 20px 0px 24px 12px;
-}
-.formbox img{
-    position: absolute;
-    margin: -2px 29px -8px 0px;
-    right: 136px;
-
-
-}
-.formbox{
-    position: relative;
+body {
+  background-color: black;
 }
 
-.formbox .input1{
-    width: 202px;
-    height: 25px;
-}
-.formbox label{
-    position: relative;
-    top: -40px;
-    pointer-events: none;
-    transition: 0.4s ease;
-    font-family: 'Kanit', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-}
-.formbox input{
-    background: transparent;
-    font-size: 15px;
-    color: #f0f8ff96;
-    font-weight: lighter;
-    border: none;
-    outline: none;
-}
-.input1 input:focus~label{
-    top: -45px;
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-
-.formbox .rem{
-    margin: 10px;
+.login-content {
+  width: 42%;
+  background: transparent;
+  color: white;
+  position: relative;
+  backdrop-filter: blur(5px);
 }
 
-.wow{
-    display: flex;
-    font-size: 17px;
-    font-weight: 500;  
-    font-family: 'Kanit', sans-serif;
-    margin: -8px 0px 15px;
-    color: white;
-    padding: 0px 0px 1px 10px;
-    justify-content: space-between;
-}
-.forg a{
-    padding: 13px;
-    font-family: 'Kanit', sans-serif;
-    font-size: 17px;
-    color: rgb(94 179 255);
-    text-decoration: none;
-}
-.forg a:hover{
-    text-decoration: underline;
+.form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.btn{
-    width: 100%;
-    height: 30px;
-    font-weight: 500;
-    font-size: 16px;
-    color: white;
-    background-color: #0202cf;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    box-shadow: 0px 0px 10px #3835fb;
+.input-container {
+  position: relative;
+  margin: 20px 0px 24px 12px;
 }
-.btn:hover{
-    cursor: pointer;
-    border-radius:6px ;
-    background-color: #0c0cdd;
-}
-.hein{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 12px;
-    font-size: 17px;
-    color: white;
-    font-family: 'Kanit', sans-serif;
-}
-.hein a{
 
-    text-decoration: none;
-    color:rgb(94 179 255) ;
+input {
+  background: transparent;
+  font-size: 15px;
+  color: #f0f8ff96;
+  font-weight: lighter;
+  border: none;
+  outline: none;
+  width: 202px;
+  height: 25px;
 }
-.hein a:hover{
-    text-decoration: underline;
+
+label {
+  position: absolute;
+  top: -40px;
+  pointer-events: none;
+  transition: 0.4s ease;
+  font-family: 'Kanit', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.checkbox {
+  font-family: 'Kanit', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.login-btn {
+  width: 100%;
+  height: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  background-color: #0202cf;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 10px #3835fb;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  border-radius: 6px;
+  background-color: #0c0cdd;
+}
+
+.signup-link, .privacy-policy-link {
+  text-decoration: none;
+  color: rgb(94 179 255);
+}
+
+.signup-link:hover, .privacy-policy-link:hover {
+  text-decoration: underline;
 }
