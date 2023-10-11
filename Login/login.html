@@ -1,33 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="LoginForm.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="content">
-        <div class="formbox">
-            <form action="#" class="form">
-                <h2>Sign In</h2>
-                <div class="input1">
-                    <span class="icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAU5JREFUSEtjZKAxYKSx+QzDyIL///+HAIOrBYjVKQy2m0D9NYyMjGtA5sCDCGjBVSBfi0LDYdqvAS3QRrfgP1R2OpDOJNMiuF6gBWDHI/sAbAFIAugbDyBzPhBLEGnRC6C6RKDWHUC9cHNw+YAXqPALUJ0gUMEMIA4jYMkqoHwGUM97oB4eIPszzKG4LHgMlIgDajgAUgDUFAGkpgKxEJpF74D8bKC6FVB1DkB6ERDLErIAZs4cIKMIaMBnoCWgoAIFGSjoQGAHNEheAOV4gew+IE5BdgDOOEBz5TMgPxWoeBvUlRlQ14GCDuQ7LyA1G4il0PSB4xKsFiYBixx0hVD+EiCdD9QDChaQwaDgmgjEMTjUk2wByJzXSMEACj5RXIZDfUmSD/CZhVWO1CAatQCcMmhe2IGK63YgViE5wFE1YC+uKTQUp/ZhVGXSKogAcq2HGcamB5kAAAAASUVORK5CYII="/></span>
-                    <input type="email" class="email" placeholder="abc123@gmail.com" required>
-                    <label for="email" class="l1">email</label>
-                </div>
-                <div class="input1">
-                    <span class="icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATRJREFUSEtjZKAxYKSx+QxEWfD///8QoEMygdgJ6qC9QHoqIyPjekIOJGgB0PBuoCElOAxqAFrSiM8SvBYADQ8Dal4JNaAZSE+DsnOAdDWU7Q60ZBcuSwhZcA6o0RCIi4CG9CMbArQcZEELEO8EynmQa8FfoEYmIBYFGvIGzQJJIP8ZEL8DygmTa8F/kEagAVh9CvQFXnmwXnwRRMgAQvIDYwE0zYMiT51QGkeTvwnk1wBDcw2yOEYQAS24ClSgRaLhMOXXgBZoE7IAHHHkAvQEgc0HA2bBCqCvsqE+AxUfSdh8SYkPFIGaH4AMBcaTMpC6Q20LJIEWvIBaoASk71LbgrVAC0DFNsgHe4CUM7UtgBcZsBw8aC2geUYDhXM7EKuQmNmIKypINJSgcoJ1MkETCCgAAAyNjRlmobS2AAAAAElFTkSuQmCC"/></span>
-                    <input type="password" class="password" required>
-                    <label for="password" class="l2">password</label>
-                </div>
-                <div class="wow">
-                    <span class="check"><input type="checkbox" class="remember">  Remember me</span>
-                    <span class="forg"><a href="#">Forget Password?</a></span>
-                </div>
-                    <div><button class="btn" type="submit">Sign In</button></div>
-                <div class="hein">Don't have an account?<span><a href="#">Sign up</a></span></div>
-
-            </form>
-</body>
-</html>
+<div class="login-container">
+  <div class="login-content">
+    <div class="form-box">
+      <h2>Login</h2>
+      <form>
+        <div class="input-container">
+          <input type="text" id="username" required>
+          <label for="username">Username</label>
+        </div>
+        <div class="input-container">
+          <input type="password" id="password" required>
+          <label for="password">Password</label>
+        </div>
+        <div class="remember-me">
+          <label class="checkbox">
+            <input type="checkbox" id="remember"> Remember me
+          </label>
+        </div>
+        <button class="login-btn" type="submit">Login</button>
+      </form>
+    </div>
+    <div class="forgot-password">
+      <a href="#">Forgot your password?</a>
+    </div>
+  </div>
+  <div class="bottom-links">
+    <div class="signup-link">
+      <a href="#">Sign up</a>
+    </div>
+    <div class="privacy-policy-link">
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+</div>
