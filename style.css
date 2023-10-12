@@ -368,8 +368,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 100px;
 }
 
-
-
 #myBtn {
   display: none;
   position: fixed; 
@@ -378,16 +376,25 @@ body::-webkit-scrollbar-thumb {
   z-index: 99; 
   border: none; 
   outline: none; 
-  background-color: #dc3545; 
-  color: white; 
+  background-color: #d8cece; 
+  border: 3px solid rgb(255, 12, 12);
+  color: rgb(255, 9, 9); 
   cursor: pointer; 
-  padding: 15px; 
-  border-radius: 100px;
-  font-size: 18px; 
+  /* padding: 15px;  */
+  border-radius: 50px;
+  font-size: 25px; 
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+
+#myBtn i{
+  font-weight: bold;
 }
 
 #myBtn:hover {
-  background-color: #f9b9c0; 
-  color: black;
-  border: 1px solid red;
+  background-color: #ec2626; 
+  color: white;
+  border: 3px solid white;
 }
+
