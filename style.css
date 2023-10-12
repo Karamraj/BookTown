@@ -322,6 +322,7 @@ main .book-name {
 
 .my-5 {
   background-color: #cc3444;
+  height: 20rem;
 
 }
 
@@ -349,6 +350,14 @@ main .book-name {
   gap: 8px;
   display: flex;
   width: 32%;
+ 
+}
+@media only screen and (min-width: 768px) {
+
+.social-links{
+  position: relative;
+  left: 25rem;
+}
 }
 
 
