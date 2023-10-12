@@ -1,4 +1,3 @@
-require('dotenv').config();
 const booksModel = require('../models/booksModel');
 
 
