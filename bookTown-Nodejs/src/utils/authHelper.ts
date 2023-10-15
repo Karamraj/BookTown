@@ -3,6 +3,7 @@ import * as crypto from 'crypto';
 import * as jwt from 'jsonwebtoken';
 
 var iterations = 10000;
+let jwtSecretKey = process.env.JWT_SECRET_KEY; 
 
 export const hashPassword = async (password) => {
     const salt = crypto.randomBytes(128).toString('base64');
@@ -25,7 +26,6 @@ export var generateRandomNumber = function (length) {
     }
 
 export function generateToken(userId) {
-    let jwtSecretKey = process.env.JWT_SECRET_KEY; 
     let data = { 
         time: Date(), 
         userId: userId, 
@@ -36,3 +36,9 @@ export function generateToken(userId) {
     return token;
 
 } 
+
+export function validateToken(token: String) {
+    const valid = jwt.verify(token, jwtSecretKey);
+
+    return valid;
+}
