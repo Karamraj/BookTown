@@ -10,7 +10,7 @@ label {
 }
 
 .row-2 {
-  background: url(./IMG/deafults/bookcase-img.jpg.jpg) center no-repeat;
+  background: url(./IMG/deafults/book-2.png) center no-repeat;
   background-size: cover;
 }
 .row{
@@ -18,13 +18,13 @@ label {
 }
 .in-img-text h1,
 .in-img-text h3 {
-  color: rgba(255, 255, 255, 0.895);
+  color: rgb(255, 255, 255);
   transition: all ease 0.3s;
 }
 
 .in-img-text h1:hover,
 .in-img-text h3:hover {
-  color: #dc3545;
+  color: #c81717;
 }
 
 .asterix {
@@ -78,7 +78,7 @@ label {
 
 .nav-bar a:hover{
   background-color: rgba(255, 27, 54, 0.972) !important;
-  color: rgb(227, 232, 222);
+  color: rgb(0, 0, 0);
 }
 
 .upper-main-body .carousel:hover,
@@ -117,6 +117,7 @@ h2::after {
   /* centre aligns the books in slider */
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .carousel-inner{
@@ -128,7 +129,7 @@ h2::after {
 }
 
 .carousel .item {
-  color: #747d89;
+  color: #000000;
   min-height: 32.5rem;
   text-align: center;
   overflow: hidden;
@@ -149,8 +150,9 @@ h2::after {
 .carousel .thumb-wrapper {
   height: 580px;
   padding: 0.6rem;
-  background: #fff;
+  background: #ededed;
   border-radius: 0.6rem;
+  border: #000;
   text-align: center;
   position: relative;
   box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
@@ -187,8 +189,8 @@ h2::after {
 
 .carousel .thumb-content .btn:hover,
 .carousel .thumb-content .btn:focus {
-  color: #fff;
-  background: #dc3545;
+  color: #000000;
+  background: #b7a1d6;
   box-shadow: none;
 }
 
@@ -280,7 +282,7 @@ h2::after {
 
 .star-rating i {
   font-size: 1.4rem;
-  color: #ffc000;
+  color: #e1b01f;
 }
 
 main .book-name {
@@ -388,8 +390,8 @@ body::-webkit-scrollbar-track {
 }
  
 body::-webkit-scrollbar-thumb {
-  background-color: #dc3545;
-  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  background-color: #000000;
+  box-shadow: inset 2px 2px 5px 0 rgba(#948e8e, 0.5);
   border-radius: 100px;
 }
 
@@ -401,9 +403,9 @@ body::-webkit-scrollbar-thumb {
   z-index: 99; 
   border: none; 
   outline: none; 
-  background-color: #d8cece; 
-  border: 3px solid rgb(255, 12, 12);
-  color: rgb(255, 9, 9); 
+  background-color: #e0bb32; 
+  border: 3px solid rgb(0, 0, 0);
+  color: rgb(85, 67, 67); 
   cursor: pointer; 
   /* padding: 15px;  */
   border-radius: 50px;
@@ -418,8 +420,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #myBtn:hover {
-  background-color: #ec2626; 
-  color: white;
-  border: 3px solid white;
+  background-color: #7bd2e8; 
+  color: #040707;
+  border: 3px solid rgb(0, 0, 0);
 }
-
