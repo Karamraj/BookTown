@@ -5,6 +5,10 @@ body {
   overflow-x: hidden;
 }
 
+label {
+  font-weight: bold;
+}
+
 .row-2 {
   background: url(./IMG/deafults/bookcase-img.jpg.jpg) center no-repeat;
   background-size: cover;
@@ -23,10 +27,22 @@ body {
   color: #dc3545;
 }
 
+.asterix {
+  color : red;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
 .nav-bar {
   width: 80%;
   margin: auto;
   /* height: 4.7rem; */
+}
+
+.form-element {
+  border-left : 5px solid red;
+  padding-left : 50px;
+  padding-right: 30px;
 }
 
 .nav-bar li {
