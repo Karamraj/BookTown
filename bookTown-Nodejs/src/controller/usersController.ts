@@ -55,3 +55,122 @@ export async function signUpUser(req, res) {
         res.status(403).send({"message": err.message});
     }
 }
+
+export async function userProfile(req, res) {
+    try {
+        const token = req.headers.authorization;
+        const getUser : any = await userRepo.userProfile(token.replace("Bearer ",""));
+
+        if(getUser._id) {
+            res.status(200).send({"message": "user Profile", "result": getUser});
+        }
+        else {
+            res.status(401).send(getUser);2
+        }
+    }
+    catch (err) {
+        res.status(403).send({"message": err.message});
+
+    }
+}
+
+
+export async function updatePhone(req, res) {
+    try {
+        const token = req.headers.authorization;
+        const phone = req.body.phone;
+        const updatePhone : any = await userRepo.updatePhone(token.replace("Bearer ",""), phone);
+
+        if(updatePhone.modifiedCount >= 0)  {
+            res.status(200).send({"message": "Updated phone number"});
+        }
+        else {
+            res.status(403).send(updatePhone);
+        }
+    }
+    catch (err) {
+        res.status(403).send({"message": err.message});
+
+    }
+}
+
+
+export async function updateAddress(req, res) {
+    try {
+        const token = req.headers.authorization;
+        const country = req.body.country;
+        const state = req.body.state;
+        const pincode = req.body.pincode;
+        const address = req.body.streetAddress;
+    
+        const updateAddress : any= await userRepo.updateAddress(token.replace("Bearer ",""), address, pincode, state, country);
+
+        if(updateAddress.modifiedCount >= 0) {
+            res.status(200).send({"message": "Updated Address"});
+        }
+        else {
+            res.status(403).send(updateAddress);
+        }
+    }
+    catch (err) {
+        res.status(403).send({"message": err.message});
+
+    }
+}
+
+export async function forgotPassword(req, res) {
+    try {
+        const email = req.body.email
+        const forgotPassword : any = await userRepo.forgotPassword(email)
+
+        if(forgotPassword._id) {
+            res.status(200).send({"message": 'OTP Sent to '+email});
+        }
+        else {
+            res.status(401).send(forgotPassword);
+        }
+    }
+    catch (err) {
+        res.status(403).send({"message": err.message});
+
+    }
+}
+
+
+export async function verifyOTP(req, res) {
+    try {
+        const email = req.body.email
+        const otp = req.body.otp;
+        const verify : any = await userRepo.verifyOTP(email, otp)
+        console.log(verify);
+        if(verify._id) {
+            res.status(200).send({"message": 'OTP Verified, you can reset your password now'});
+        }
+        else {
+            res.status(401).send(verify);
+        }
+    }
+    catch (err) {
+        res.status(403).send({"message": err.message});
+
+    }
+}
+
+export async function resetPassword(req, res) {
+    try {
+        const email = req.body.email
+        const password = req.body.password;
+
+        const reset : any = await userRepo.resetPassword(email, password);
+        if(reset._id) {
+            res.status(200).send({"message": 'Password reset successfully!'});
+        }
+        else {
+            res.status(401).send(reset);
+        }
+    }
+    catch (err) {
+        res.status(403).send({"message": err.message});
+
+    }
+}
