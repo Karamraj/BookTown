@@ -403,9 +403,9 @@ body::-webkit-scrollbar-thumb {
   z-index: 99; 
   border: none; 
   outline: none; 
-  background-color: #e0bb32; 
-  border: 3px solid rgb(0, 0, 0);
-  color: rgb(85, 67, 67); 
+  background-color: #ff0000; 
+  /* border: 1px solid rgb(0, 0, 0); */
+  color: rgb(255, 255, 255); 
   cursor: pointer; 
   /* padding: 15px;  */
   border-radius: 50px;
@@ -420,7 +420,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #myBtn:hover {
-  background-color: #7bd2e8; 
-  color: #040707;
-  border: 3px solid rgb(0, 0, 0);
+  background-color: #ff0000; 
+  color: #000000;
+  /* border: 3px solid rgb(0, 0, 0); */
 }
