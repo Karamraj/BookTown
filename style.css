@@ -13,7 +13,7 @@ label {
   background: url(./IMG/deafults/book-2.png) center no-repeat;
   background-size: cover;
 }
-.row{
+.row {
   margin-bottom: 10px;
 }
 .in-img-text h1,
@@ -28,7 +28,7 @@ label {
 }
 
 .asterix {
-  color : red;
+  color: red;
   font-weight: bold;
   margin-left: 5px;
 }
@@ -40,16 +40,14 @@ label {
 }
 
 .form-element {
-  border-left : 5px solid red;
-  padding-left : 50px;
+  border-left: 5px solid red;
+  padding-left: 50px;
   padding-right: 30px;
 }
 
 .nav-bar li {
-
-  transition: all ease .2s;
+  transition: all ease 0.2s;
   margin: 1rem 1.5rem;
-
 }
 
 .nav-bar li:hover {
@@ -64,19 +62,17 @@ label {
     rgba(0, 0, 0, 0.3) 0 0.3rem 0.7rem -0.3rem;
 }
 
-
-
-.nav-bar a{
+.nav-bar a {
   border-radius: 0.6rem;
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: bold;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 0.5rem;
-    /* line-height: 4.7rem; */
+  /* line-height: 4.7rem; */
 }
 
-.nav-bar a:hover{
+.nav-bar a:hover {
   background-color: rgba(255, 27, 54, 0.972) !important;
   color: rgb(0, 0, 0);
 }
@@ -120,7 +116,7 @@ h2::after {
   align-items: center;
 }
 
-.carousel-inner{
+.carousel-inner {
   width: 85%;
 }
 
@@ -134,15 +130,15 @@ h2::after {
   text-align: center;
   overflow: hidden;
   /* below fixes side shadows of book item got cut */
-  padding-left: 2rem; 
+  padding-left: 2rem;
   padding-right: 2rem;
 }
-  /* Added to make height of all slider con of books same */
+/* Added to make height of all slider con of books same */
 
-.bookCon{
+.bookCon {
   height: 585px;
 }
-.addToCart-btn{
+.addToCart-btn {
   position: absolute;
   bottom: 20px;
   left: 40px;
@@ -205,10 +201,8 @@ h2::after {
   padding: 0.2rem 0;
 }
 
-.add-to-cart-btn{
+.add-to-cart-btn {
   width: 8rem;
-  
-
 }
 
 .carousel .item-price strike {
@@ -305,43 +299,42 @@ main .book-name {
   width: 100%;
 }
 
-.footer-heading{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.footer-heading {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: large;
   font-weight: bold;
   width: 150px;
   transition: all ease 0.3s;
 }
 
-.footer-heading:hover{
+.footer-heading:hover {
   transform: scale(1.2);
 }
 
-.footer-text{
-  font-size:1.4rem;
+.footer-text {
+  font-size: 1.4rem;
   color: rgb(0, 0, 0);
 }
 
-.footer-text:hover{
+.footer-text:hover {
   text-decoration: underline;
   transition: all ease 0.3s;
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
-.contact-details{
+.contact-details {
   font-weight: bold;
   color: rgba(255, 255, 255, 0.896);
 }
 
 .container {
-  background-color: #FFF;
+  background-color: #fff;
   max-width: 100%;
 }
 
 .my-5 {
   background-color: #cc3444;
   height: 20rem;
-
 }
 
 .space {
@@ -349,7 +342,7 @@ main .book-name {
   background-color: #8fcadc;
 }
 
-@media screen and (min-width:768px) and (max-width:1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .nav-bar li a {
     font-size: 0.9rem;
     padding: 1rem 0.2rem;
@@ -368,27 +361,23 @@ main .book-name {
   gap: 8px;
   display: flex;
   width: 32%;
- 
 }
 @media only screen and (min-width: 768px) {
-
-.social-links{
-  position: relative;
-  left: 25rem;
+  .social-links {
+    position: relative;
+    left: 25rem;
+  }
 }
-}
-
-
 
 /* Custom scroll bar  */
 body::-webkit-scrollbar {
   width: 1em;
 }
- 
+
 body::-webkit-scrollbar-track {
   background: transparent;
 }
- 
+
 body::-webkit-scrollbar-thumb {
   background-color: #000000;
   box-shadow: inset 2px 2px 5px 0 rgba(#948e8e, 0.5);
@@ -397,30 +386,30 @@ body::-webkit-scrollbar-thumb {
 
 #myBtn {
   display: none;
-  position: fixed; 
-  bottom: 20px; 
-  right: 30px; 
-  z-index: 99; 
-  border: none; 
-  outline: none; 
-  background-color: #ff0000; 
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #ff0000;
   /* border: 1px solid rgb(0, 0, 0); */
-  color: rgb(255, 255, 255); 
-  cursor: pointer; 
+  color: rgb(255, 255, 255);
+  cursor: pointer;
   /* padding: 15px;  */
   border-radius: 50px;
-  font-size: 25px; 
+  font-size: 25px;
   margin: auto;
   width: 50px;
   height: 50px;
 }
 
-#myBtn i{
+#myBtn i {
   font-weight: bold;
 }
 
 #myBtn:hover {
-  background-color: #ff0000; 
+  background-color: #ff0000;
   color: #000000;
   /* border: 3px solid rgb(0, 0, 0); */
 }
