@@ -1,313 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/public/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "icon" href="/public/favicon.ico" type = "image/x-icon">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../style.css">
-    
     <title>BookTown Products</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="main-header fixed-top bg-light">
-        <section
-            class="row-1 d-flex flex-wrap-reverse flex-sm-nowrap justify-content-between align-content-center align-items-center py-4">
-            <ul class="second-navbar-bi-list-clicked nav-bar list-unstyled position-absolute d-flex flex-column w-100">
-                <li id="categorieSelector" class="categorie flex-grow-1 fs-18 text-center w-100">
-                    <a href="../LinkedHTMLs/self-dev-index.html" role="button"
-                        class="w-100 h-100 d-block spinner-border-sm bg-danger text-light border border-1 border-warning border-opacity-10"
-                        rel="noopener noreferrer">Self-Development</a>
-                </li>
-                <li id="categorieSelector" class="categorie flex-grow-1 fs-18 text-center w-100">
-                    <a href="../LinkedHTMLs/philosophy-index.html" role="button"
-                        class="w-100 h-100 d-inline-block spinner-border-sm bg-danger text-light border border-1 border-warning border-opacity-10"
-                        rel="noopener noreferrer">Philosophy</a>
-                </li>
-                <li id="categorieSelector" class="categorie flex-grow-1 fs-18 text-center w-100">
-                    <a href="../LinkedHTMLs/novels-index.html" role="button"
-                        class="w-100 h-100 d-inline-block spinner-border-sm bg-danger text-light border border-1 border-warning border-opacity-10"
-                        rel="noopener noreferrer">Novels</a>
-                </li>
-                <li id="categorieSelector" class="categorie flex-grow-1 fs-18 text-center w-100">
-                    <a href="../MainPage/index.html" role="button"
-                        class="w-100 h-100 d-inline-block spinner-border-sm bg-danger text-light border border-1 border-warning border-opacity-10"
-                        rel="noopener noreferrer">Newest Books</a>
-                </li>
-                <li id="categorieSelector" class="categorie flex-grow-1 fs-18 text-center w-100">
-                    <a href="../LinkedHTMLs/best.html" role="button"
-                        class="w-100 h-100 d-block spinner-border-sm bg-danger text-light border border-1 border-warning border-opacity-10"
-                        rel="noopener noreferrer">Best Of BookTown</a>
-                </li>
-                <li id="categorieSelector" class="close-list-btn categorie flex-grow-1 fs-18 text-center w-100">
-                    <a role="button"
-                        class="w-100 h-100 d-block spinner-border-sm bg-danger text-light border border-1 border-warning border-opacity-10"
-                        rel="noopener noreferrer">Close<i class="bi bi-arrow-up ms-2"></i></a>
-                </li>
-            </ul>
-            <a class="d-none d-md-block ms-5" href="../../index.html" target="_blank">
-                <img class="logo-name w-50 img-fluid" src="../../IMG/deafults/logo-name.svg"
-                    alt="logo and name of website" />
-            </a>
-            <a class="d-none d-sm-block d-md-none me-4 pb-1" href="../Home-Page/index.html" target="_blank">
-                <i role="button" class="bi bi-house-door-fill text-danger fs-32 ps-2">
-                </i>
-            </a>
-            <nav class="navbar flex-grow-1 align-self-center me-sm-5 pe-lg-5">
-                <div class="container-fluid me-sm-5 pe-sm-5">
-                    <form class="d-flex me-sm-5 pe-sm-5 w-100" role="search">
-                        <div class="input-group">
-                            <input class="searchBar form-control h-100 border-danger border-opacity-25" type="search"
-                                placeholder="Search" aria-label="Search" />
-                            <button class="btn btn-outline-danger" type="submit"><i class="bi bi-search"></i></button>
-                        </div>
-                    </form>
-                </div>
-            </nav>
-            <div class="personal-profile d-flex gap-3 align-items-center justify-content-center me-5">
-                <a href="../Home-Page/index.html" target="_blank">
-                    <i role="button" class="bi bi-house-door-fill text-danger fs-32 ps-2 d-block d-sm-none">
-                    </i>
-                </a>
+      <section
+        class="row-1 d-flex flex-wrap-reverse flex-sm-nowrap justify-content-between align-content-center align-items-center py-4"
+      >
+        <ul
+          class="second-navbar-bi-list-clicked nav-bar list-unstyled position-absolute d-flex flex-column w-100"
+        >
+          <li
+            id="categorieSelector"
+            class="categorie flex-grow-1 fs-18 text-center w-100"
+          >
+            <a
+              href="../LinkedHTMLs/self-dev-index.html"
+              role="button"
+              class="w-100 h-100 d-block spinner-border-sm bg-danger text-light border border-1 border-warning border-opacity-10"
+              rel="noopener noreferrer"
+              >Self-Development</a
+            >
+          </li>
+          <li
+            id="categorieSelector"
+            class="categorie flex-grow-1 fs-18 text-center w-100"
+          >
+            <a
+              href="../LinkedHTMLs/philosophy-index.html"
+              role="button"
+              class="w-100 h-100 d-inline-block spinner-border-sm bg-danger text-light border border-1 border-warning border-opacity-10"
+              rel="noopener noreferrer"
+              >Philosophy</a
+            >
+          </li>
+          <li
+            id="categorieSelector"
+            class="categorie flex-grow-1 fs-18 text-center w-100"
+          >
+            <a
+              href="../LinkedHTMLs/novels-index.html"
+              role="button"
+              class="w-100 h-100 d-inline-block spinner-border-sm bg-danger text-light border border-1 border-warning border-opacity-10"
+              rel="noopener noreferrer"
+              >Novels</a
+            >
+          </li>
+          <li
+            id="categorieSelector"
+            class="categorie flex-grow-1 fs-18 text-center w-100"
+          >
+            <a
+              href="../MainPage/index.html"
+              role="button"
+              class="w-100 h-100 d-inline-block spinner-border-sm bg-danger text-light border border-1 border-warning border-opacity-10"
+              rel="noopener noreferrer"
+              >Newest Books</a
+            >
+          </li>
+          <li
+            id="categorieSelector"
+            class="categorie flex-grow-1 fs-18 text-center w-100"
+          >
+            <a
+              href="../LinkedHTMLs/best.html"
+              role="button"
+              class="w-100 h-100 d-block spinner-border-sm bg-danger text-light border border-1 border-warning border-opacity-10"
+              rel="noopener noreferrer"
+              >Best Of BookTown</a
+            >
+          </li>
+          <li
+            id="categorieSelector"
+            class="close-list-btn categorie flex-grow-1 fs-18 text-center w-100"
+          >
+            <a
+              role="button"
+              class="w-100 h-100 d-block spinner-border-sm bg-danger text-light border border-1 border-warning border-opacity-10"
+              rel="noopener noreferrer"
+              >Close<i class="bi bi-arrow-up ms-2"></i
+            ></a>
+          </li>
+        </ul>
+        <a
+          class="d-none d-md-block ms-5"
+          href="../../index.html"
+          target="_blank"
+        >
+          <img
+            class="logo-name w-50 img-fluid"
+            src="../../IMG/deafults/logo-name.svg"
+            alt="logo and name of website"
+          />
+        </a>
+        <a
+          class="d-none d-sm-block d-md-none me-4 pb-1"
+          href="../Home-Page/index.html"
+          target="_blank"
+        >
+          <i role="button" class="bi bi-house-door-fill text-danger fs-32 ps-2">
+          </i>
+        </a>
+        <nav class="navbar flex-grow-1 align-self-center me-sm-5 pe-lg-5">
+          <div class="container-fluid me-sm-5 pe-sm-5">
+            <form class="d-flex me-sm-5 pe-sm-5 w-100" role="search">
+              <div class="input-group">
+                <input
+                  class="searchBar form-control h-100 border-danger border-opacity-25"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-danger" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </nav>
+        <div
+          class="personal-profile d-flex gap-3 align-items-center justify-content-center me-5"
+        >
+          <a href="../Home-Page/index.html" target="_blank">
+            <i
+              role="button"
+              class="bi bi-house-door-fill text-danger fs-32 ps-2 d-block d-sm-none"
+            >
+            </i>
+          </a>
 
-                <span onclick="window.open('http://127.0.0.1:5500/Cart/index.html','_self','resizable=yes')">
-                    <button type="button" class="btn btn-outline-danger">
-                        <svg class="" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-bag-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z">
-                            </path>
-                        </svg>
-                        Purchase
-                    </button>
-                </span>
-                <a class="link" href="../../SignUpModal/index.html" target="_blank" rel="noopener noreferrer">
-                    <button type="button" class="btn btn-outline-danger">
-                        <svg class="" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-person-fill" viewBox="0 0 16 16">
-                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
-                        </svg>
-                        Profile
-                    </button>
-                </a>
-                <i role="button" class="bi bi-list fs-32 ps-2 d-block d-sm-none"></i>
-            </div>
-        </section>
-        <section class="row-2">
-            <ul class="nav-bar list-unstyled d-none d-sm-flex">
-                <li id="categorieSelector" class="categorie flex-grow-1 fs-18 text-center">
-                    <a href="../LinkedHTMLs/self-dev-index.html" role="button"
-                        class="w-100 h-100 d-block spinner-border-sm bg-danger text-light border border-1 border-warning border-opacity-10"
-                        rel="noopener noreferrer">Self-Development</a>
-                </li>
-                <li id="categorieSelector" class="categorie flex-grow-1 fs-18 text-center">
-                    <a href="../LinkedHTMLs/philosophy-index.html" role="button"
-                        class="w-100 h-100 d-inline-block spinner-border-sm bg-danger text-light border border-1 border-warning border-opacity-10"
-                        rel="noopener noreferrer">Philosophy</a>
-                </li>
-                <li id="categorieSelector" class="categorie flex-grow-1 fs-18 text-center">
-                    <a href="../LinkedHTMLs/novels-index.html" role="button"
-                        class="w-100 h-100 d-inline-block spinner-border-sm bg-danger text-light border border-1 border-warning border-opacity-10"
-                        rel="noopener noreferrer">Novels</a>
-                </li>
-                <li id="categorieSelector" class="categorie flex-grow-1 fs-18 text-center">
-                    <a href="../MainPage/index.html" role="button"
-                        class="w-100 h-100 d-inline-block spinner-border-sm bg-danger text-light border border-1 border-warning border-opacity-10"
-                        rel="noopener noreferrer">Newest Books</a>
-                </li>
-                <li id="categorieSelector" class="categorie flex-grow-1 fs-18 text-center">
-                    <a href="../LinkedHTMLs/best.html" role="button"
-                        class="w-100 h-100 d-block spinner-border-sm bg-danger text-light border border-1 border-warning border-opacity-10"
-                        rel="noopener noreferrer">Best Of BookTown</a>
-                </li>
-            </ul>
-        </section>
+          <span
+            onclick="window.open('http://127.0.0.1:5500/Cart/index.html','_self','resizable=yes')"
+          >
+            <button type="button" class="btn btn-outline-danger">
+              <svg
+                class=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-bag-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"
+                ></path>
+              </svg>
+              Purchase
+            </button>
+          </span>
+          <a
+            class="link"
+            href="../../SignUpModal/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button type="button" class="btn btn-outline-danger">
+              <svg
+                class=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-person-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                ></path>
+              </svg>
+              Profile
+            </button>
+          </a>
+          <i role="button" class="bi bi-list fs-32 ps-2 d-block d-sm-none"></i>
+        </div>
+      </section>
+      <section class="row-2">
+        <ul class="nav-bar list-unstyled d-none d-sm-flex">
+          <li
+            id="categorieSelector"
+            class="categorie flex-grow-1 fs-18 text-center"
+          >
+            <a
+              href="../LinkedHTMLs/self-dev-index.html"
+              role="button"
+              class="w-100 h-100 d-block spinner-border-sm bg-danger text-light border border-1 border-warning border-opacity-10"
+              rel="noopener noreferrer"
+              >Self-Development</a
+            >
+          </li>
+          <li
+            id="categorieSelector"
+            class="categorie flex-grow-1 fs-18 text-center"
+          >
+            <a
+              href="../LinkedHTMLs/philosophy-index.html"
+              role="button"
+              class="w-100 h-100 d-inline-block spinner-border-sm bg-danger text-light border border-1 border-warning border-opacity-10"
+              rel="noopener noreferrer"
+              >Philosophy</a
+            >
+          </li>
+          <li
+            id="categorieSelector"
+            class="categorie flex-grow-1 fs-18 text-center"
+          >
+            <a
+              href="../LinkedHTMLs/novels-index.html"
+              role="button"
+              class="w-100 h-100 d-inline-block spinner-border-sm bg-danger text-light border border-1 border-warning border-opacity-10"
+              rel="noopener noreferrer"
+              >Novels</a
+            >
+          </li>
+          <li
+            id="categorieSelector"
+            class="categorie flex-grow-1 fs-18 text-center"
+          >
+            <a
+              href="../MainPage/index.html"
+              role="button"
+              class="w-100 h-100 d-inline-block spinner-border-sm bg-danger text-light border border-1 border-warning border-opacity-10"
+              rel="noopener noreferrer"
+              >Newest Books</a
+            >
+          </li>
+          <li
+            id="categorieSelector"
+            class="categorie flex-grow-1 fs-18 text-center"
+          >
+            <a
+              href="../LinkedHTMLs/best.html"
+              role="button"
+              class="w-100 h-100 d-block spinner-border-sm bg-danger text-light border border-1 border-warning border-opacity-10"
+              rel="noopener noreferrer"
+              >Best Of BookTown</a
+            >
+          </li>
+        </ul>
+      </section>
     </header>
 
     <main
-        class="main-body d-flex flex-column align-items-center justify-content-center text-center gap-4 pb-5 pt-5 container">
-        <div class="dropdown align-self-start ms-5 ps-5">
-            <button class="btn btn-outline-danger dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Sorted by <span class="sorted-by"> : Newest Books</span>
-            </button>
-            <ul class="dropdown-menu">
-                <li><a id="dropdownItem" class="dropdown-item" href="#">Cheapest to most expensive</a></li>
-                <li><a id="dropdownItem" class="dropdown-item" href="#">Most expensive to Cheapest</a></li>
-                <li><a id="dropdownItem" class="dropdown-item" href="#">Newest Books</a></li>
-                <li><a id="dropdownItem" class="dropdown-item" href="#">Best Of BookTown</a></li>
-            </ul>
-        </div>
-        <div id="thumb"
-            class="main d-flex flex-column flex-sm-row mx-auto flex-wrap gap-5 text-center justify-content-sm-evenly align-items-center">
-        </div>
+      class="main-body d-flex flex-column align-items-center justify-content-center text-center gap-4 pb-5 pt-5 container"
+    >
+      <div class="dropdown align-self-start ms-5 ps-5">
+        <button
+          class="btn btn-outline-danger dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Sorted by <span class="sorted-by"> : Newest Books</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <a id="dropdownItem" class="dropdown-item" href="#"
+              >Cheapest to most expensive</a
+            >
+          </li>
+          <li>
+            <a id="dropdownItem" class="dropdown-item" href="#"
+              >Most expensive to Cheapest</a
+            >
+          </li>
+          <li>
+            <a id="dropdownItem" class="dropdown-item" href="#">Newest Books</a>
+          </li>
+          <li>
+            <a id="dropdownItem" class="dropdown-item" href="#"
+              >Best Of BookTown</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div
+        id="thumb"
+        class="main d-flex flex-column flex-sm-row mx-auto flex-wrap gap-5 text-center justify-content-sm-evenly align-items-center"
+      ></div>
     </main>
 
-    <div class="container my-5">
-        <!-- Footer -->
-        <footer
-                class="text-center text-lg-start text-white"
-                style="background-color: #45526e"
+    <div class="container my-5 mb-0">
+      <!-- Footer -->
+      <footer
+        class="text-center text-lg-start text-white"
+        style="background-color: #45526e"
+      >
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Links -->
+          <section class="">
+            <!--Grid row-->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6
+                  class="footer-heading text-uppercase mb-3 pb-3 border-4 border-bottom border-white"
                 >
-          <!-- Grid container -->
-          <div class="container p-4 pb-0">
-            <!-- Section: Links -->
-            <section class="">
-              <!--Grid row-->
-              <div class="row">
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                  <h6 class="text-uppercase mb-4 font-weight-bold">
-                    BookTown
-                  </h6>
-                  <p>
-                    BookTown is one of the most popular online web purchasing store that have 1000+ book varieties
-                  </p>
-                </div>
-                <!-- Grid column -->
-      
-                <hr class="w-100 clearfix d-md-none" />
-      
-                <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                  <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-                  <p>
-                    <a class="text-white">Book Titles</a>
-                  </p>
-                  <p>
-                    <a class="text-white">All Books</a>
-                  </p>
-                  <p>
-                    <a class="text-white">Publishes</a>
-                  </p>
-                  <p>
-                    <a class="text-white">Select Books</a>
-                  </p>
-                </div>
-                <!-- Grid column -->
-      
-                <hr class="w-100 clearfix d-md-none" />
-      
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                  <h6 class="text-uppercase mb-4 font-weight-bold">
-                    Useful links
-                  </h6>
-                  <p>
-                    <a class="text-white">Your Account</a>
-                  </p>
-                  <p>
-                    <a class="text-white">Become an Affiliate</a>
-                  </p>
-                  <p>
-                    <a class="text-white">Shipping Rates</a>
-                  </p>
-                  <p>
-                    <a class="text-white">Help</a>
-                  </p>
-                </div>
-      
-                <!-- Grid column -->
-                <hr class="w-100 clearfix d-md-none" />
-      
-                <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                  <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                  <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-                  <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
-                  <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                  <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-                </div>
-                <!-- Grid column -->
+                  BookTown
+                </h6>
+                <p class="fs-5">
+                  BookTown is one of the most popular online web purchasing
+                  store that have 1000+ book varieties
+                </p>
               </div>
-              <!--Grid row-->
-            </section>
-            <!-- Section: Links -->
-      
-            <hr class="my-3">
-      
-            <!-- Section: Copyright -->
-            <section class="p-3 pt-0">
-              <div class="row d-flex align-items-center">
-                <!-- Grid column -->
-                <div class="col-md-7 col-lg-8 text-center text-md-start">
-                  <!-- Copyright -->
-                  <div class="p-3">
-                    © 2023 Copyright:
-                    <a class="text-white" href="https://mdbootstrap.com/"
-                       >BookTown.com</a
-                      >
-                  </div>
-                  <!-- Copyright -->
+              <!-- Grid column -->
+
+              <hr class="w-100 clearfix d-md-none" />
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6
+                  class="footer-heading text-uppercase mb-3 pb-3 border-4 border-bottom border-white"
+                >
+                  Products
+                </h6>
+                <p class="footer-text">
+                  <a class="text-white text-decoration-none">Book Titles</a>
+                </p>
+                <p class="footer-text">
+                  <a class="text-white">All Books</a>
+                </p>
+                <p class="footer-text">
+                  <a class="text-white">Publishes</a>
+                </p>
+                <p class="footer-text">
+                  <a class="text-white">Select Books</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <hr class="w-100 clearfix d-md-none" />
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6
+                  class="footer-heading text-uppercase mb-3 pb-3 border-4 border-bottom border-white"
+                >
+                  Useful links
+                </h6>
+                <p class="footer-text">
+                  <a class="text-white">Your Account</a>
+                </p>
+                <p class="footer-text">
+                  <a class="text-white">Become an Affiliate</a>
+                </p>
+                <p class="footer-text">
+                  <a class="text-white">Shipping Rates</a>
+                </p>
+                <p class="footer-text">
+                  <a class="text-white">Help</a>
+                </p>
+              </div>
+
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6
+                  class="footer-heading text-uppercase mb-3 pb-3 border-4 border-bottom border-white"
+                >
+                  Contact
+                </h6>
+                <p class="footer-text">
+                  <i class="bi bi-house-fill mr-3"></i> New York, NY 10012, US
+                </p>
+                <p class="footer-text">
+                  <i class="bi bi-envelope-fill mr-3"></i> info@gmail.com
+                </p>
+                <p class="footer-text">
+                  <i class="bi bi-telephone-fill mr-3"></i> + 01 234 567 88
+                </p>
+                <p class="footer-text">
+                  <i class="bi bi-telephone-fill mr-3"></i> + 01 234 567 89
+                </p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!--Grid row-->
+          </section>
+          <!-- Section: Links -->
+
+          <hr class="my-3" />
+
+          <!-- Section: Copyright -->
+          <section class="p-3 pt-0">
+            <div class="row d-flex align-items-center">
+              <!-- Grid column -->
+              <div class="col-md-7 col-lg-8 text-center text-md-start">
+                <!-- Copyright -->
+                <div class="p-3">
+                  © 2023 Copyright:
+                  <a class="text-white" href="https://mdbootstrap.com/"
+                    >BookTown.com</a
+                  >
                 </div>
-                <!-- Grid column -->
-      
-                <!-- Grid column -->
-                <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                  <a
+                <!-- Copyright -->
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                <a
                   class="btn btn-primary btn-floating m-1"
-                  style="background-color: #55acee;"
+                  style="background-color: #55acee"
                   href=""
                   role="button"
                   ><i class="bi bi-twitter"></i
                 ></a>
-          
+
                 <a
                   class="btn btn-primary btn-floating m-1"
-                  style="background-color: #dd4b39;"
+                  style="background-color: #dd4b39"
                   href=""
                   role="button"
                   ><i class="bi bi-google"></i
                 ></a>
-          
+
                 <a
                   class="btn btn-primary btn-floating m-1"
-                  style="background-color: #ac2bac;"
+                  style="background-color: #ac2bac"
                   href=""
                   role="button"
                   ><i class="bi bi-instagram"></i
                 ></a>
-          
+
                 <a
                   class="btn btn-primary btn-floating m-1"
-                  style="background-color: #0082ca;"
+                  style="background-color: #0082ca"
                   href=""
                   role="button"
                   ><i class="bi bi-linkedin"></i
                 ></a>
                 <a
                   class="btn btn-primary btn-floating m-1"
-                  style="background-color: #333333;"
+                  style="background-color: #333333"
                   href=""
                   role="button"
                   ><i class="bi bi-github"></i
                 ></a>
-                </div>
-                <!-- Grid column -->
               </div>
-            </section>
-            <!-- Section: Copyright -->
-          </div>
-          <!-- Grid container -->
-        </footer>
-        <!-- Footer -->
-      </div>
-      <!-- End of .container -->
+              <!-- Grid column -->
+            </div>
+          </section>
+          <!-- Section: Copyright -->
+        </div>
+        <!-- Grid container -->
+      </footer>
+      <!-- Footer -->
+    </div>
+    <!-- End of .container -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
     <script src="../cartHandler.js"></script>
     <script type="module" src="../defaultScript.js"></script>
     <script type="module" src="./script.js"></script>
-</body>
-
+  </body>
 </html>
