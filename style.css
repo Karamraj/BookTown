@@ -281,7 +281,7 @@ main .book-name {
 }
 
 .my-5 .container {
-  background-color: #cc3444;
+  background-color: #758f81;
   width: 100%;
 }
 
@@ -303,7 +303,7 @@ main .book-name {
 
 .footer-text{
   font-size:1.4rem;
-  color: rgb(215, 203, 203);
+  color: rgb(0, 0, 0);
 }
 
 .footer-text:hover{
@@ -314,7 +314,7 @@ main .book-name {
 
 .contact-details{
   font-weight: bold;
-  color: white;
+  color: rgba(255, 255, 255, 0.896);
 }
 
 .container {
@@ -330,7 +330,7 @@ main .book-name {
 
 .space {
   height: 230px;
-  background-color: #cc3444;
+  background-color: #8fcadc;
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
