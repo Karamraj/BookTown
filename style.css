@@ -144,8 +144,9 @@ h2::after {
 }
 .addToCart-btn{
   position: absolute;
-  bottom: 20px;
-  left: 40px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .carousel .thumb-wrapper {
   height: 580px;
