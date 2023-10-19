@@ -7,8 +7,10 @@
 }
 
 body{
-  background:#dc3545;
+  background: url('/IMG/bg.jpg');
   cursor: pointer;
+  background-size: cover;
+  height: 100vh;
 }
 
 .wrapper{
@@ -18,10 +20,11 @@ body{
   transform: translate(-50%,-50%);
   max-width: 350px;
   width: 100%;
-  background: #fff;
+  background: #ffffff28;
+backdrop-filter: blur(8px);
   padding: 25px;
   border-radius: 5px;
-  box-shadow: 4px 4px 2px rgba(254,236,164,1); 
+  box-shadow: 4px 4px 2px rgba(44, 44, 44, 0.288); 
 }
 
 .wrapper h2{
@@ -29,7 +32,7 @@ body{
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #332902;
+  color: #ffffff;
 }
 
 .wrapper .input_field{
@@ -38,11 +41,16 @@ body{
 
 .wrapper .input_field input[type="text"],
 .wrapper textarea{
-  border: 1px solid #e0e0e0;
+border: none;
   width: 100%;
+  color: rgba(255, 255, 255, 0.767);
+  
   padding: 10px;
+  background-color: #ffffff25;
 }
-
+::placeholder{
+  color: #fff;
+}
 .wrapper textarea{
   resize: none;
   height: 80px;
@@ -54,20 +62,32 @@ body{
   padding: 10px;
   text-align: center;
   width: 100%;
-  background:#dc3545;
-  color: #332902;
+  background:#f5aeb538;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: bold;
-  border-radius: 25px;
   cursor: pointer;
+  transition: all .3s;
+  border-radius: 3px;
+}
+.wrapper .btn input[type="submit"]:hover{
+  background-color: #e0e0e048;
+  border-radius: 20px;
+  font-size: 12px;
+
+}
+.wrapper .btn input[type="submit"]:active{
+transform: translateY(-2px);  
 }
 
 #error_message{
   margin-bottom: 20px;
-  background: #fe8b8e;
+  background: #eeabaf7c;
   padding: 0px;
   text-align: center;
   font-size: 14px;
+  color: rgb(241, 241, 241);
   transition: all 0.5s ease;
+  font-weight: bold;
 }
