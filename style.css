@@ -292,7 +292,7 @@ main .book-name {
 }
 
 .my-5 .container {
-  background-color: #758f81;
+  background-color: #dc3545;
   width: 100%;
 }
 
@@ -304,23 +304,34 @@ main .book-name {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: large;
   font-weight: bold;
-  width: 150px;
   transition: all ease 0.3s;
+  padding: 9px;
+  width: 80%;
 }
 
 .footer-heading:hover {
-  transform: scale(1.2);
+  background-color: #ffffff34;
+  
+cursor: pointer;
 }
 
 .footer-text {
+  margin: 4px;
   font-size: 1.4rem;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  padding: 10px;
+  background-color: #ffffff17;
+  transition: all .3s;
+
 }
 
 .footer-text:hover {
-  text-decoration: underline;
   transition: all ease 0.3s;
-  transform: scale(1.05);
+  cursor: pointer;
+  transform: translateY(-2px);
+  background-color: #ffffff5b;
+
 }
 
 .contact-details {
