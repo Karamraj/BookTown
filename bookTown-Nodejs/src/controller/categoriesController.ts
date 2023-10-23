@@ -27,7 +27,7 @@ export async function addCategory(req, res) {
     const cat = await helper.addCategory(name);
 
     if(cat._id) {
-        res.status(200).json({"flag": true, "message":"Category added", "result" : cat})
+        res.status(201).json({"flag": true, "message":"Category added", "result" : cat})
     }
     else {
         res.status(404).json({"flag": false, "message":"Failed to add category, check that you're sending right and all body paramteres"})

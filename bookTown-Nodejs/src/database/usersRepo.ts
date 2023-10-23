@@ -3,6 +3,7 @@ const passwordModel = require('../models/userPasswordModel');
 const userTokenModel = require('../models/userTokenModel');
 const otpModel = require('../models/otpModel');
 import * as helper from '../utils/authHelper';
+
 export async function userExists(email) {
     try {
        const userExists = await userModel.findOne({email: email})

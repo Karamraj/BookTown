@@ -54,7 +54,7 @@ export async function addBook(req, res) {
     const books = await booksHelper.addBook(title, desc, image, rating, price,categories)
 
     if(books._id) {
-        res.status(200).json({"flag": true, "message":"Book added", "result" : books})
+        res.status(201).json({"flag": true, "message":"Book added", "result" : books})
     }
     else {
         res.status(404).json({"flag": false, "message":"Failed to add book, check that you're sending right and all body paramteres"})
