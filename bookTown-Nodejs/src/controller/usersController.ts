@@ -40,7 +40,7 @@ export async function signUpUser(req, res) {
                const createUser : any = await userRepo.signUpUser(fullname, email, password);
 
                 if(createUser._id) {
-                    res.status(200).send({"message": "Signup Successfully", "result": createUser});
+                    res.status(201).send({"message": "Signup Successfully", "result": createUser});
                 }
                 else {
                     res.status(403).send(createUser);
