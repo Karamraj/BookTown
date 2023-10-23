@@ -7,7 +7,7 @@
 }
 
 body{
-  background: url('/IMG/bg.jpg');
+  background-image: url("/IMG/bg.jpg");
   cursor: pointer;
   background-size: cover;
   height: 100vh;
@@ -21,7 +21,7 @@ body{
   max-width: 350px;
   width: 100%;
   background: #ffffff28;
-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   padding: 25px;
   border-radius: 5px;
   box-shadow: 4px 4px 2px rgba(44, 44, 44, 0.288); 
@@ -41,7 +41,7 @@ backdrop-filter: blur(8px);
 
 .wrapper .input_field input[type="text"],
 .wrapper textarea{
-border: none;
+  border: none;
   width: 100%;
   color: rgba(255, 255, 255, 0.767);
   
@@ -78,7 +78,7 @@ border: none;
 
 }
 .wrapper .btn input[type="submit"]:active{
-transform: translateY(-2px);  
+  transform: translateY(-2px);  
 }
 
 #error_message{
