@@ -1,34 +1,42 @@
-<div class="login-container">
-  <div class="login-content">
-    <div class="form-box">
-      <h2>Login</h2>
-      <form>
-        <div class="input-container">
-          <input type="text" id="username" required>
-          <label for="username">Username</label>
-        </div>
-        <div class="input-container">
-          <input type="password" id="password" required>
-          <label for="password">Password</label>
-        </div>
-        <div class="remember-me">
-          <label class="checkbox">
-            <input type="checkbox" id="remember"> Remember me
-          </label>
-        </div>
-        <button class="login-btn" type="submit">Login</button>
-      </form>
-    </div>
-    <div class="forgot-password">
-      <a href="#">Forgot your password?</a>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<div class="wrapper">
+  <link rel="stylesheet" href="./login.css" />
+  <div class="heading">
+  <h2>Welcome!</h2>
+  <p>Sign In to your account</p>
   </div>
-  <div class="bottom-links">
-    <div class="signup-link">
-      <a href="#">Sign up</a>
-    </div>
-    <div class="privacy-policy-link">
-      <a href="#">Privacy Policy</a>
-    </div>
+  
+  <div class="input-group">
+   <input type="text" id="username" class="input-field" placeholder="Username" >
   </div>
-</div>
+  
+  <div class="input-group">
+   <input type="password" id="password" class="input-field" placeholder="Password" >
+  </div>
+  
+  <div class="input-group row">
+  
+   <div class="row">
+   <input type="checkbox" id="remember" hidden>
+   <label for="remember" class="custom-checkbox"></label>
+   <label for="remember">Remember me?</label>
+   </div>
+   
+   <div class="row">
+      <a href="#" target="_blank">Forgot password?</a> 
+   </div>
+  </div>
+  
+  
+  <div class="input-group">
+  <button>Login <i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+  
+  </div>
+  
+ 
+
+
+</html>
+  
