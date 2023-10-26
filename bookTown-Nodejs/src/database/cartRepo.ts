@@ -1,29 +1,87 @@
-const booksModel = require('../models/booksModel');
+const cartModel = require('../models/cartModel');
 
 
-export async function exploreBooks(pageSize, offset) {
+export async function getCart(userId: String) {
     
-    return await booksModel.find().skip(offset).limit(pageSize);
+    return await cartModel.findOne({userId : userId});
 
 }
 
-export async function booksByCategory(pageSize, offset, category) {
-    
-    return await booksModel.find({categories : category}).skip(offset).limit(pageSize);
-
-}
-
-export async function addBook(title, desc, image, rating, price,category) {
+export async function createCart(userId: String, bookItem: any) {
     try {
-        const create = await booksModel.create({title: title, description: desc, 
-            coverImage: image, rating: rating, price: price, categories: category})
-        console.log(create);
-        return create;
+        const book = {
+            bookId: bookItem._id,
+            quantity:1
+        }
+        const create = await cartModel.create({userId : userId, totalPrice: bookItem.price, items : [book] });
 
+        if(create._id) {
+            return create;
+        }
+        else {
+            return "Error creating cart"
+        }
     }
     catch(err) {
         console.log(err);
         return err;
     }
+
+
+}
+
+export async function addExistingProductToCart(userId: String, bookItem, position, quantity) {
+    try {
+        const create = await cartModel.updateOne({userId : userId, 'items.bookId' : bookItem._id } 
+        , { $inc : { 'items.$.quantity' : quantity} });
+
+         return create;
+    }
+    catch(err) {
+        console.log(err);
+        return err;
+    }
+
+
+}
+
+export async function addNewProductToCart(userId: String, bookItem) {
+
+    try {
+            
+        const book = {
+                bookId: bookItem._id,
+                quantity:1
+            }
+
+        const create = await cartModel.updateOne({userId : userId } , { $push : { 'items' : book }} );
+    }
+    catch(err) {
+        console.log(err);
+        return err;
+    }
+
+
+}
+
+export async function removeExistingProductFromCart(userId: String, bookItem) {
+
+    try {
+        const delete_ = await cartModel.updateOne({userId : userId } , { $pull : {   
+            'items': { bookId: bookItem._id}}} );
+        console.log(delete_);
+        return delete_;
+    }
+    catch(err) {
+        console.log(err);
+        return err;
+    }
+
+
+}
+
+export async function clearCart(userId: String) {
+    
+    return await cartModel.deleteMany({userId : userId});
 
 }

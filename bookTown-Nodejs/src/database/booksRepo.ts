@@ -13,6 +13,12 @@ export async function booksByCategory(pageSize, offset, category) {
 
 }
 
+export async function booksById(id) {
+    
+    return await booksModel.findOne({_id : id});
+
+}
+
 export async function addBook(title, desc, image, rating, price,category) {
     try {
         const create = await booksModel.create({title: title, description: desc, 
