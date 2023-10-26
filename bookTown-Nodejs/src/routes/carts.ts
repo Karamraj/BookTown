@@ -12,7 +12,7 @@ router.post(endPoint+"/", async (req, res) => {
     controller.getCart(req, res);
 })
 
-router.post(endPoint+"/add", async (req, res) => {
+router.post(endPoint+"/add-product", async (req, res) => {
     controller.addToCart(req, res);
 })
 
