@@ -1,0 +1,31 @@
+.form-check-input {
+    cursor: pointer;
+    box-shadow: none;
+  }
+  .form-check-input:checked {
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+    box-shadow: none;
+  }
+  .form-check-input:focus {
+    outline: none;
+    border: 1px solid rgba(0,0,0,.25);
+    box-shadow: none;
+  }
+  .back-button {
+    background-color: transparent;
+    border: 1px solid #0f0f0f40;
+  }
+  .back-button:hover {
+    transform: scale(1.2);
+    border: 2px solid #0f0f0f40;
+  }
+  .back-button:active {
+    transform: scale(1.2);
+    border: 1px solid #dc3545;
+  }
+.back-link {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}  

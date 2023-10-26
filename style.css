@@ -5,20 +5,32 @@ body {
   overflow-x: hidden;
 }
 
-.row-2 {
-  background: url(./IMG/deafults/bookcase-img.jpg.jpg) center no-repeat;
-  background-size: cover;
+label {
+  font-weight: bold;
 }
 
+.row-2 {
+  background: url(./IMG/deafults/book-2.png) center no-repeat;
+  background-size: cover;
+}
+.row {
+  margin-bottom: 10px;
+}
 .in-img-text h1,
 .in-img-text h3 {
-  color: rgba(255, 255, 255, 0.895);
+  color: rgb(255, 255, 255);
   transition: all ease 0.3s;
 }
 
 .in-img-text h1:hover,
 .in-img-text h3:hover {
-  color: #dc3545;
+  color: #c81717;
+}
+
+.asterix {
+  color: red;
+  font-weight: bold;
+  margin-left: 5px;
 }
 
 .nav-bar {
@@ -27,11 +39,15 @@ body {
   /* height: 4.7rem; */
 }
 
+.form-element {
+  border-left: 5px solid red;
+  padding-left: 50px;
+  padding-right: 30px;
+}
+
 .nav-bar li {
-
-  transition: all ease .2s;
+  transition: all ease 0.2s;
   margin: 1rem 1.5rem;
-
 }
 
 .nav-bar li:hover {
@@ -46,21 +62,19 @@ body {
     rgba(0, 0, 0, 0.3) 0 0.3rem 0.7rem -0.3rem;
 }
 
-
-
-.nav-bar a{
+.nav-bar a {
   border-radius: 0.6rem;
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: bold;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 0.5rem;
-    /* line-height: 4.7rem; */
+  /* line-height: 4.7rem; */
 }
 
-.nav-bar a:hover{
+.nav-bar a:hover {
   background-color: rgba(255, 27, 54, 0.972) !important;
-  color: rgb(227, 232, 222);
+  color: rgb(0, 0, 0);
 }
 
 .upper-main-body .carousel:hover,
@@ -96,9 +110,13 @@ h2::after {
   width: 85%;
   margin: auto;
   padding: 0 2rem;
+  /* centre aligns the books in slider */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.carousel-inner{
+.carousel-inner {
   width: 85%;
 }
 
@@ -107,19 +125,31 @@ h2::after {
 }
 
 .carousel .item {
-  color: #747d89;
+  color: #000000;
   min-height: 32.5rem;
   text-align: center;
   overflow: hidden;
   /* below fixes side shadows of book item got cut */
-  padding-left: 2rem; 
+  padding-left: 2rem;
   padding-right: 2rem;
 }
+/* Added to make height of all slider con of books same */
 
+.bookCon {
+  height: 585px;
+}
+.addToCart-btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
 .carousel .thumb-wrapper {
+  height: 580px;
   padding: 0.6rem;
-  background: #fff;
+  background: #ededed;
   border-radius: 0.6rem;
+  border: #000;
   text-align: center;
   position: relative;
   box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
@@ -156,8 +186,8 @@ h2::after {
 
 .carousel .thumb-content .btn:hover,
 .carousel .thumb-content .btn:focus {
-  color: #fff;
-  background: #dc3545;
+  color: #000000;
+  background: #b7a1d6;
   box-shadow: none;
 }
 
@@ -172,7 +202,7 @@ h2::after {
   padding: 0.2rem 0;
 }
 
-.add-to-cart-btn{
+.add-to-cart-btn {
   width: 8rem;
 }
 
@@ -247,11 +277,12 @@ h2::after {
 
 .star-rating i {
   font-size: 1.4rem;
-  color: #ffc000;
+  color: #e1b01f;
 }
 
 main .book-name {
   min-height: 3.5rem;
+  height: 9rem;
 }
 
 .second-navbar-bi-list-clicked {
@@ -261,7 +292,7 @@ main .book-name {
 }
 
 .my-5 .container {
-  background-color: #cc3444;
+  background-color: #dc3545;
   width: 100%;
 }
 
@@ -269,50 +300,61 @@ main .book-name {
   width: 100%;
 }
 
-.footer-heading{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.footer-heading {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: large;
   font-weight: bold;
-  width: 150px;
   transition: all ease 0.3s;
+  padding: 9px;
+  width: 80%;
 }
 
-.footer-heading:hover{
-  transform: scale(1.2);
+.footer-heading:hover {
+  background-color: #ffffff34;
+  
+cursor: pointer;
 }
 
-.footer-text{
-  font-size:1.4rem;
-  color: rgb(215, 203, 203);
+.footer-text {
+  margin: 4px;
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  padding: 10px;
+  background-color: #ffffff17;
+  transition: all .3s;
+
 }
 
-.footer-text:hover{
-  text-decoration: underline;
+.footer-text:hover {
   transition: all ease 0.3s;
-  transform: scale(1.05); 
+  cursor: pointer;
+  transform: translateY(-2px);
+  background-color: #ffffff5b;
+
 }
 
-.contact-details{
+.contact-details {
   font-weight: bold;
-  color: white;
+  color: rgba(255, 255, 255, 0.896);
 }
 
 .container {
-  background-color: #FFF;
+  background-color: #fff;
   max-width: 100%;
 }
 
 .my-5 {
   background-color: #cc3444;
-
+  height: 20rem;
 }
 
 .space {
   height: 230px;
-  background-color: #cc3444;
+  background-color: #8fcadc;
 }
 
-@media screen and (min-width:768px) and (max-width:1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .nav-bar li a {
     font-size: 0.9rem;
     padding: 1rem 0.2rem;
@@ -324,12 +366,62 @@ main .book-name {
 }
 
 .social-links {
-  margin-left:1250px;
+  /* margin-left:1000px; */
   margin-bottom: 10px;
   padding-bottom: -50px;
   flex-wrap: wrap;
   gap: 8px;
   display: flex;
-  width: 43%;
+  width: 32%;
+}
+@media only screen and (min-width: 768px) {
+  .social-links {
+    position: relative;
+    left: 25rem;
+  }
 }
 
+/* Custom scroll bar  */
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  box-shadow: inset 2px 2px 5px 0 rgba(#948e8e, 0.5);
+  border-radius: 100px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #ff0000;
+  /* border: 1px solid rgb(0, 0, 0); */
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  /* padding: 15px;  */
+  border-radius: 50px;
+  font-size: 25px;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+
+#myBtn i {
+  font-weight: bold;
+}
+
+#myBtn:hover {
+  background-color: #ff0000;
+  color: #000000;
+  /* border: 3px solid rgb(0, 0, 0); */
+}

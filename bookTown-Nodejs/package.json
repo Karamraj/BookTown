@@ -8,7 +8,7 @@
     "dev": "nodemon index"
   },
   "keywords": [],
-  "author": "Bhaskar Kaura",
+  "author": "BookTown",
   "license": "ISC",
   "dependencies": {
     "@types/typescript": "^2.0.0",

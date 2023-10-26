@@ -1,0 +1,84 @@
+body {
+  background-color: black;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-content {
+  width: 42%;
+  background: transparent;
+  color: white;
+  position: relative;
+  backdrop-filter: blur(5px);
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container {
+  position: relative;
+  margin: 20px 0px 24px 12px;
+}
+
+input {
+  background: transparent;
+  font-size: 15px;
+  color: #f0f8ff96;
+  font-weight: lighter;
+  border: none;
+  outline: none;
+  width: 202px;
+  height: 25px;
+}
+
+label {
+  position: absolute;
+  top: -40px;
+  pointer-events: none;
+  transition: 0.4s ease;
+  font-family: 'Kanit', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.checkbox {
+  font-family: 'Kanit', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.login-btn {
+  width: 100%;
+  height: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  background-color: #0202cf;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 10px #3835fb;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  border-radius: 6px;
+  background-color: #0c0cdd;
+}
+
+.signup-link, .privacy-policy-link {
+  text-decoration: none;
+  color: rgb(94 179 255);
+}
+
+.signup-link:hover, .privacy-policy-link:hover {
+  text-decoration: underline;
+}

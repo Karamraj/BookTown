@@ -4,10 +4,10 @@
  <img src="https://res.cloudinary.com/dxxeks4o5/image/upload/v1696337204/logo-book_x1t4pb.png" alt="logo"/>
 <h1>BookTown</h1>
 
-![](https://img.shields.io/badge/HTML-8A2BE2?style=for-the-badge&logo=HTML&color=black)
-![](https://img.shields.io/badge/CSS-8A2BE2?style=for-the-badge&logo=Css&color=orange)
-![](https://img.shields.io/badge/javascript-8A2BE2?style=for-the-badge&logo=javascript&labelcolor=yellow)
-![](https://img.shields.io/badge/Bootstrap-8A2BE2?style=for-the-badge&logo=bootstrap&labelcolor=black)
+[![](https://img.shields.io/badge/HTML-8A2BE2?style=for-the-badge&logo=HTML&color=black)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![](https://img.shields.io/badge/CSS-8A2BE2?style=for-the-badge&logo=Css&color=orange)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![](https://img.shields.io/badge/javascript-8A2BE2?style=for-the-badge&logo=javascript&labelcolor=yellow)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![](https://img.shields.io/badge/Bootstrap-8A2BE2?style=for-the-badge&logo=bootstrap&labelcolor=black)](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
 
 </div>
 
@@ -21,6 +21,7 @@
 <br>
 
 # BookTown <a name="introduction"></a>
+
 BookTown is a fully functional website for purchasing books. It was created using HTML, CSS, Bootstrap, and vanila JavaScript. Users can browse through a variety of books, add them to their cart, and checkout securely. The website also includes a search function and user account management.
 
 <br>
@@ -31,9 +32,10 @@ BookTown is a fully functional website for purchasing books. It was created usin
 - Shopping cart
 - Order placement
 - Payment integration
-<br>
+  <br>
 
 # Installation 🚀 <a name="quickstart"></a>
+
 ## To run the project locally, follow these steps:
 
 1. Fork the project repository:
@@ -63,13 +65,13 @@ cd BookTown
 
 <br>
 
+# Contributing
 
-
-# Contributing  
 We welcome contributions from anyone interested in improving the BookTown! To contribute, please fork the repository and submit a pull request with your changes.
 <br>
 
 ### Our contributors <a name="contributors"></a>
+
 Thank you for your interest in contributing to our project! We appreciate any contributions, whether it's bug fixes, new features, or documentation improvements.
 <br/>
 
@@ -78,14 +80,13 @@ Thank you for your interest in contributing to our project! We appreciate any co
 
 <br/>
 
-
 ## Do join our discord :
 
 <a href="https://discord.gg/hcrMnUdv">
   <img src="https://img.icons8.com/color/2x/discord--v2.png" height="50px"></img>
 </a>
 
-## 🤠 Project Admin 
+## 🤠 Project Admin
 
 <a href="https://github.com/Karamraj"><img src="https://res.cloudinary.com/dxxeks4o5/image/upload/v1696338265/92857243_xj33at.jpg" height="80px"/></a>
 
@@ -94,4 +95,3 @@ Thank you for your interest in contributing to our project! We appreciate any co
 Github - https://github.com/Karamraj
 <br>
 Linkedin - https://www.linkedin.com/in/karamraj-singh-anand/
-
