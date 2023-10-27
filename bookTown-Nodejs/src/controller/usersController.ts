@@ -65,7 +65,7 @@ export async function userProfile(req, res) {
             res.status(200).send({"message": "user Profile", "result": getUser});
         }
         else {
-            res.status(401).send(getUser);2
+            res.status(401).send(getUser);
         }
     }
     catch (err) {
