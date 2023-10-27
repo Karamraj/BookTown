@@ -1,3 +1,4 @@
+
 @import url(../CSS/reset.css);
 @import url(../CSS/Utiles.css);
 
@@ -370,9 +371,10 @@ cursor: pointer;
   margin-bottom: 10px;
   padding-bottom: -50px;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 2px;
   display: flex;
   width: 32%;
+  
 }
 @media only screen and (min-width: 768px) {
   .social-links {
@@ -400,7 +402,7 @@ body::-webkit-scrollbar-thumb {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 25px;
   z-index: 99;
   border: none;
   outline: none;
