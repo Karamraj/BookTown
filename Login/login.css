@@ -1,84 +1,133 @@
-body {
-  background-color: black;
-}
 
-.login-container {
+::selection{
+  color: #ffffff;
+  background-color: #31285C;
+ }
+ 
+ *{
+  padding:0;
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+ }
+ 
+ a{
+  color: #31285C;
+ }
+ 
+ 
+ 
+ body{
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-}
-
-.login-content {
-  width: 42%;
-  background: transparent;
-  color: white;
-  position: relative;
-  backdrop-filter: blur(5px);
-}
-
-.form-box {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.input-container {
-  position: relative;
-  margin: 20px 0px 24px 12px;
-}
-
-input {
-  background: transparent;
-  font-size: 15px;
-  color: #f0f8ff96;
-  font-weight: lighter;
+  background-color: #F0F0F0;
+  padding-top: 20px;
+ }
+ 
+ .wrapper{
+  width: 320px;
+  min-height:100px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
+  padding: 30px;
+ }
+ 
+ .input-field{
+  width: 100%;
+  height: 45px;
   border: none;
+  padding: 10px;
+  background-color: #eeeeee;
+  color: gray;
   outline: none;
-  width: 202px;
-  height: 25px;
-}
-
-label {
-  position: absolute;
-  top: -40px;
-  pointer-events: none;
-  transition: 0.4s ease;
-  font-family: 'Kanit', sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.checkbox {
-  font-family: 'Kanit', sans-serif;
+  font-size: 15px;
+  margin-bottom: 20px;
+  transition: .5s;
+  border-radius: 5px;
+ }
+ 
+ input:hover{
+ }
+ 
+ 
+ .heading{
+  color: #3B3663;
+  margin-bottom: 20px;
+ }
+ 
+ .heading p{ 
+  color: #AAA8BB;
+ }
+ 
+ .heading i{
+  font-size: 30px;
+  color: #4D61FC;
+ } 
+ 
+ label{
+  color: #AAA8BB;
+  font-weight: 400;
+ }
+ 
+ button{
+  width: 100%;
+  height: 45px;
+  border: none;
+  color: #FFFFFF;
+  background-color: #31285C;
+  border-radius: 5px;
   font-size: 17px;
   font-weight: 500;
-}
-
-.login-btn {
-  width: 100%;
-  height: 30px;
-  font-weight: 500;
-  font-size: 16px;
-  color: white;
-  background-color: #0202cf;
+  transition: 0.3s;
+ }
+ 
+ button:hover{
+  background-color: #31283B;
+ }
+ 
+ .row{
+  min-width: 5px;
+  min-height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 15px;
+ }
+ 
+ .custom-checkbox{
+  width: 17px;
+  height: 17px;
   border-radius: 5px;
-  border: none;
-  outline: none;
-  box-shadow: 0px 0px 10px #3835fb;
-  cursor: pointer;
-}
-
-.login-btn:hover {
-  border-radius: 6px;
-  background-color: #0c0cdd;
-}
-
-.signup-link, .privacy-policy-link {
-  text-decoration: none;
-  color: rgb(94 179 255);
-}
-
-.signup-link:hover, .privacy-policy-link:hover {
-  text-decoration: underline;
-}
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  font-size: 10px;
+  margin-right: 5px;
+ }
+ 
+ input[type=checkbox]:checked ~ .custom-checkbox{
+  background-color: #31285C;
+ }
+ 
+ input[type=checkbox]:checked ~ .custom-checkbox::before {
+ font-family: "Font Awesome 5 Free";
+   content: "\f00c";
+   display: inline-block;
+   font-weight: 900;
+   color: #ffffff;
+ }
+ 
+ footer{
+  text-align: center;
+  margin: 20px;
+ }
+ 
+ 
