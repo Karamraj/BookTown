@@ -7,7 +7,7 @@
 }
 
 body{
-  background-image: url("/IMG/bg.jpg");
+  background-image: url("/IMG/forest-2.png");
   cursor: pointer;
   background-size: cover;
   height: 100vh;
@@ -32,7 +32,7 @@ body{
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #ffffff;
+  color: #000000;
 }
 
 .wrapper .input_field{
@@ -43,13 +43,13 @@ body{
 .wrapper textarea{
   border: none;
   width: 100%;
-  color: rgba(255, 255, 255, 0.767);
+  color: rgba(255, 255, 255, 0.878);
   
   padding: 10px;
   background-color: #ffffff25;
 }
 ::placeholder{
-  color: #fff;
+  color: #ffffffd6;
 }
 .wrapper textarea{
   resize: none;
@@ -72,7 +72,7 @@ body{
   border-radius: 3px;
 }
 .wrapper .btn input[type="submit"]:hover{
-  background-color: #e0e0e048;
+  background-color: #000000;
   border-radius: 20px;
   font-size: 12px;
 
@@ -83,11 +83,11 @@ body{
 
 #error_message{
   margin-bottom: 20px;
-  background: #eeabaf7c;
+  background: #abd6ee7c;
   padding: 0px;
   text-align: center;
   font-size: 14px;
-  color: rgb(241, 241, 241);
+  color: rgb(3, 3, 3);
   transition: all 0.5s ease;
   font-weight: bold;
 }
