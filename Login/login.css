@@ -1,133 +1,108 @@
-
-::selection{
-  color: #ffffff;
-  background-color: #31285C;
- }
- 
- *{
-  padding:0;
-  margin: 0;
-  font-family: 'Outfit', sans-serif;
-  box-sizing: border-box;
-  text-decoration: none;
- }
- 
- a{
-  color: #31285C;
- }
- 
- 
- 
- body{
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #F0F0F0;
-  padding-top: 20px;
- }
- 
- .wrapper{
-  width: 320px;
-  min-height:100px;
-  background-color: #FFFFFF;
-  border-radius: 5px;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
-  padding: 30px;
- }
- 
- .input-field{
-  width: 100%;
-  height: 45px;
-  border: none;
-  padding: 10px;
-  background-color: #eeeeee;
-  color: gray;
-  outline: none;
-  font-size: 15px;
-  margin-bottom: 20px;
-  transition: .5s;
-  border-radius: 5px;
- }
- 
- input:hover{
- }
- 
- 
- .heading{
-  color: #3B3663;
-  margin-bottom: 20px;
- }
- 
- .heading p{ 
-  color: #AAA8BB;
- }
- 
- .heading i{
-  font-size: 30px;
-  color: #4D61FC;
- } 
- 
- label{
-  color: #AAA8BB;
-  font-weight: 400;
- }
- 
- button{
-  width: 100%;
-  height: 45px;
-  border: none;
-  color: #FFFFFF;
-  background-color: #31285C;
-  border-radius: 5px;
-  font-size: 17px;
-  font-weight: 500;
-  transition: 0.3s;
- }
- 
- button:hover{
-  background-color: #31283B;
- }
- 
- .row{
-  min-width: 5px;
-  min-height: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  font-size: 15px;
- }
- 
- .custom-checkbox{
-  width: 17px;
-  height: 17px;
-  border-radius: 5px;
-  background-color: #eeeeee;
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-  font-size: 10px;
-  margin-right: 5px;
- }
- 
- input[type=checkbox]:checked ~ .custom-checkbox{
-  background-color: #31285C;
- }
- 
- input[type=checkbox]:checked ~ .custom-checkbox::before {
- font-family: "Font Awesome 5 Free";
-   content: "\f00c";
-   display: inline-block;
-   font-weight: 900;
-   color: #ffffff;
- }
- 
- footer{
-  text-align: center;
-  margin: 20px;
- }
- 
- 
+:root {--accent: #FFA500;
+  --color1: linear-gradient(to bottom right, #FFA500, #FF5F1F);
+  --transparent: rgb(255, 255, 255, 0.3);}
+  
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    background-color: var(--transparent);
+    color: var(--accent);
+    position: absolute;
+    padding: 10px 30px;
+    margin-top: 50px;
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--transparent);
+    border-radius: 16px;
+    text-align: center;
+  }
+  
+  input {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    margin: 10px 0;
+    height: 40px;
+    width: 296px;
+    border: none;
+    border-bottom: 1px solid var(--accent);
+    background-color: transparent;
+    outline: none;
+  }
+  
+  a {
+    background: var(--color1);
+    color: #EEEEEE;
+    text-decoration: none;
+    padding: 12px 0;
+    margin: 20px 0 10px 0;
+    text-align: center;
+    border-radius: 30px;
+    transition: 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px;
+  }
+  
+  a:hover {
+    transform: translatey(2px);
+    box-shadow: none;
+  }
+  
+  .socials {
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  img {
+    max-width: 40px;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .circle {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    background: var(--color1);
+    border-radius: 50%;
+    z-index: -1;
+    width: 100px;
+    height: 100px; 
+    transform: translate(-250px, -200px);
+  }
+  
+  .circle-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: var(--color1);
+    width: 250px;
+    height: 250px; 
+    border-radius: 50%;
+    transform: translate(100px, 50px);
+    z-index: -1;
+  }
+  
+  .circle-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: var(--color1);
+    width: 150px;
+    height: 150px; 
+    border-radius: 50%;
+    transform: translate(-250px, 50px);
+    z-index: -1;
+  }
