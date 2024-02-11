@@ -108,17 +108,18 @@ h2::after {
 }
 
 .carousel {
-  width: 85%;
+  width: 95%;
   margin: auto;
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
   /* centre aligns the books in slider */
   display: flex;
-  justify-content: center;
+  height: 100%;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .carousel-inner {
-  width: 85%;
+  width: 90%;
 }
 
 .carouselImage {
@@ -146,8 +147,9 @@ h2::after {
   margin: auto;
 }
 .carousel .thumb-wrapper {
-  height: 580px;
-  padding: 0.6rem;
+  height: 55%;
+  padding: 2rem;
+  margin: 1rem;
   background: #ededed;
   border-radius: 0.6rem;
   border: #000;
@@ -155,7 +157,9 @@ h2::after {
   position: relative;
   box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
 }
-
+.carousel .thumb-wrapper:hover{
+  transform: scale(1.1);
+}
 .carousel .item .img-box {
   height: 12rem;
   margin-bottom: 2rem;
@@ -192,14 +196,17 @@ h2::after {
   box-shadow: none;
 }
 
+.carousel .thumb-content .btn{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 .carousel .thumb-content .btn i {
-  font-size: 1.4rem;
-  font-weight: bold;
   margin-left: 0.5rem;
+  padding: 1rem;
 }
 
 .carousel .item-price {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   padding: 0.2rem 0;
 }
 
